@@ -7,18 +7,18 @@ originspell: Bring Your Own Beamer
 appearing: Est.
 city: Berlin
 birth: 2010
-givenname: Bring your own beamer
+givenname: Bring
 familyname:
 othername: BYOB
 venue: Worldwide
-founder: Rafaël Rozendaal, Anne de Vries
-origin: an international movement
-profession: of a series of one-night-exhibitions curated by different people around the world
-photo: Bring Your Own Beamer at Yeltsin Center Art Gallery in Yekaterinbur in 2017
-photographer: Lubov Kabalinova
+founder: Rafaël
+origin: an
+profession: of a s
+photo: Bring Your
+photographer: Lubov
 source: Yeltsin.ru
-photographerurl: https://yeltsin.ru/news/videoart-tehnologii-i-iskusstvo/
-sourceurl: https://yeltsin.ru/news/videoart-tehnologii-i-iskusstvo/
+photographerurl: https://yeltsin.ru
+sourceurl: https://yeltsin.ru
 shortname: BYOB
 facebook: 0
 instagram: 0
