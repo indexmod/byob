@@ -18,7 +18,14 @@
 {% assign mypages = site.html_pages | sort: "order" %} {% for page in mypages %}
 {% unless page.exclude %}
 
- <a href="{{page.url|absolute_url}}"> {{ page.shortname }} <span class="rate">{% include indexmod.html %}</a></span> <span class="rex"> {{ page.photo }} | </span>
+ <a href="{{page.url|absolute_url}}"> {{ page.shortname }} <span class="rate">{% include indexmod.html %}</a></span> <span class="rex"> <div id="wrapper">
+ <div class="video-container">
+             <video autoplay muted loop>
+                 <source src="{{page.video}}" type="video/mp4">
+             </video>
+ 	<div class="overlay-desc">
+      </div>
+         </div> | </span>
  {% endunless %}
  {% endfor %}
 
