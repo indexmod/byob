@@ -313,3 +313,10 @@ div.row {
   display: table;
   clear: both;
 }
+
+.video-wrapper {
+  perspective: 1000px;
+}
+.video-container {
+  transform: rotateY(-30deg);
+}

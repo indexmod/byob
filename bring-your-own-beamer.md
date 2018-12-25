@@ -29,38 +29,12 @@ tumblr: 0
 vkontakte: 307
 soundcloud: 0
 pinterest: 0
-video: https://media.giphy.com/media/2dGZ5kHU4YXcc/giphy.mp4
+video: https://media.giphy.com/media/6nzNWo8CQkUtW/giphy.mp4
 ---
 
 BYOB is a way of making a big exhibition with zero budget. It is an exploration of the medium of projection.
 
 ## Agenda
-
-|Year|Day|City|Place|
-|-|-|
-|2018|Nov 03|Proun Gallery|Moscow <span id="a2">[\[2\]](#f2)</span>|
-
-## Open source
-
-The idea of BYOB is free to use as long as it’s non-commercial.
-
-## Founders of BYOB
-
-BYOB is an idea by Rafaël Rozendaal.
-The first BYOB was organized by Anne de Vries & Rafaël Rozendaal in Berlin in 2010.
-
-## Acronym of BYOB
-
-BYOB is an acronym for “Bring Your Own Beamer”. In Europe projectors are often referred to as “beamers”.
-
-## Mission
-
-BYOB is for anyone who is interested in moving light, sound and performance. Projection can mean many things. Projections are flexible and create a freedom to react to each others works, move things around, and create a dynamic collaborative experience. Hopefully there will be many different kinds of BYOB’s.
-
-## World
-
-About 350 BYOB's have happened around the world.
-Here are some of those cities: Aarhus, Amsterdam, Antwerp, Argentina, Athens, Auckland, Austin, Baltimore, Barcelona, Basel, Beijing, Belfast, Bergen, Berlin, Birmingham, Bogota, Bonn, Boston, Boulder, Breda, Brighton, Brooklyn, Bruges, Brussels, Bucharest, Budapest, Buffalo, Calgary, CapeTown, Caracas, Cardiff, Charlestown, Chicago, Chile, Cincinnati, Colchester, Cologne, Colombia, Columbus, Copenhagen, Corredor, Palma, Coventry, Cracow, Darwin, Denver, Detroit, Dublin, Dusseldorf, Edinburgh, Eindhoven, El Salvador, Enschede, Firenze, Frankfurt, Gavere, Geneva, Genk, Ghent, Glasgow, Gothenburg, Grand Rapids, Grenoble, Guatemala, Heerenveen, Heerlen, Hembrug, Hong Kong, Houston, Istanbul, Jerusalem, Jinju, Karlsruhe, Kosice, Krakow, Habana, Lausanne, Leeds, Lima, Linz, Ljubljana, London, Los Angeles, Maastricht, Madrid, Mallorca, Malmo, Manchester, Marrakesh, Marseille, Medellin, Melbourne, Mexico, Miami, Milano, Milton Keynes, Minneapolis, Montreal, Moscow <span id="a2">[\[2\]](#f2)</span>, Munich, Myanmar, Münster, Nashville, New Haven, New Orleans, New York, Nicosia, Norwich, Oregon, Oslo, Osnabrück, Ostend, Ostuni, Paris, Iiaarhus, Perth, Philadelphia, Pittsburgh, Portland, Poznan, Prague, Queens, Reno, Richmond, Rio de Janeiro, Rotterdam, Saint Paul, San Antonio, San Diego, Francisco, Santa Barbara, Sao Paulo, Seattle, Seoul, Shanghai, Singapore, Somerville, Southampton, Stockton, StonyBrook, Swansea, Sydney, Taipei, TelAviv, The Hague, Tijuana, Toronto, Tucson, Tuebingen, Utrecht, Valparaiso, Vancouver, Venice, Vevey, Vienna, Vitória, Warszawa, Wellington, Wrocław, Yekaterinburg.
 
 ## See also
 
