@@ -15,6 +15,7 @@
 	-webkit-filter: grayscale(99%);
 	filter: grayscale(99%);
 }
+
 .rates-top:hover {
 	font-family: 'Verdana';
 	font-size: 19px;
@@ -22,84 +23,95 @@
 	-webkit-filter: grayscale(0%);
 	filter: grayscale(0%);
 }
+
+
 .memo {
 	font-family: 'Verdana', serif;
 	font-size: 19px;
-	line-height: 1.5em;
-	font-weight: 900;
+	line-height: 1.2em;
+	font-weight: 100;
 	color: black;
 }
+
 .intro {
 	font-family: 'Verdana';
 	font-size: 20px;
-	font-weight: 900;
-	line-height: 1.5em;
+	font-weight: 100;
+	line-height: 1.2em;
 	list-style-type: none;
 }
+
 body {
 	max-width: 600px;
 	margin: auto;
 	padding: 20px;
-	background: white;
+	background: silver;
 }
 
 .date {
 	font-family: 'Verdana', serif;
 	font-size: 20px;
-	line-height: 1.5em;
-	font-weight: 900;
+	line-height: 1.2em;
+	font-weight: 100;
 	color: black;
 }
+
 p {
 	font-family: 'Verdana', serif;
 	font-size: 20px;
-	line-height: 1.5em;
-	font-weight: 900;
+	line-height: 1.2em;
+	font-weight: 100;
 	color: black;
 }
 
 p.foot {
 	font-family: 'Verdana', serif;
-	font-size: 15px;
-	line-height: 1em;
-	font-weight: 900;
+	font-size: 20px;
+	line-height: 1.2em;
+	font-weight: 100;
 }
 
 
 p.caption-name {
 	font-family: 'Verdana', serif;
-	font-size: 19px;
-	line-height: 1.5em;
-	font-weight: 900;
+	font-size: 20px;
+	line-height: 1.2em;
+	font-weight: 100;
 }
+
 p.caption-position {
 	font-family: 'Verdana', serif;
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 1.2em;
-	font-weight: 500;
+	font-weight: 100;
 }
+
 .rate {
-	font-weight: 800;
+	font-weight: 100;
 	color: green;
 }
+
 .rate:hover {
-	font-weight: 900;
+	font-weight: 100;
 	color: black;
 }
+
 h1 {
-	font-family: 'Helavetica Neue', serif;
+	font-family: 'Helvetica Neue', serif;
 	font-size: 42px;
 	font-weight: 100;
 	line-height: 1.3em;
 	color: black;
 }
+
 h2, h3, h4, h5, h6 {
-	font-family: 'Helavetica Neue';
+	font-family: 'Helvetica Neue';
 	font-size: 25px;
-	font-weight: 200;
+	font-weight: 100;
 	line-height: 1.5em;
 	color: black;
 }
+
 table {
 	width: 100%;
 	font-family: 'Verdana', serif;
@@ -116,7 +128,7 @@ th, td {
 }
 th {
 	font-family: 'Verdana', serif;
-	font-weight: 900;
+	font-weight: 200;
 	text-align: left;
 	height: auto;
 	vertical-align: center;
@@ -126,10 +138,12 @@ td {
 	height: auto;
 	vertical-align: center;
 }
+
 tr:hover {
 	background-color: #DCDCDC;
 	font-weight: 500;
 }
+
 table.top {
 	width: 100%;
 	font-family: 'Verdana', serif;
@@ -140,24 +154,29 @@ table.top {
 	border-collapse: collapse;
 	margin-left: 1px;
 }
+
 table.top th, td {
 	padding: 10px;
 	text-align: left;
 	border-bottom: 1px solid #ddd;
 }
+
 table.top td {
 	font-weight: 500;
 	height: auto;
 	vertical-align: center;
 }
+
 table.top tr:hover {
 	background-color: #DCDCDC;
 	font-weight: 500;
 }
+
 .toptable-meta {
 	font-weight: 500;
 	color: green;
 }
+
 .highlighter-rouge {
 	font-family: 'Verdana';
 	font-size: 16px;
