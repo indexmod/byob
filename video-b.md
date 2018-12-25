@@ -1,21 +1,21 @@
 ---
-title: Video A
-permalink: template
+title: Video B
+permalink: video-b
 layout: default
 originlang: Rus.
-originspell: Новогодняя фантазия
+originspell: Весенняя фантазия
 appearing: Создано
 city: Москва
-birth: 2017
+birth: 2018
 givenname: НФ
 familyname:
 othername: Фантазия
 venue: ГУМ
-founder: Андрей Дей
+founder: Вера Дей
 origin: видео-петля
 profession: для проекции
 photo: Фрагмент произведения
-photographer: А. Дей
+photographer: В. Дей
 source:
 photographerurl: https://yeltsin.ru
 sourceurl: https://yeltsin.ru
