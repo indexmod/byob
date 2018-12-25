@@ -1,15 +1,15 @@
 ---
-title: Video B
-permalink: video-b
+title: Video A
+permalink: video-a
 layout: default
 originlang: Rus.
-originspell: Осенняя фантазия
+originspell: Весенняя фантазия
 appearing: Создано
-city: Одесса
+city: Москва
 birth: 2018
 givenname: НФ
 familyname:
-othername: Фантазия Щ
+othername: Фантазия Ч
 venue: ГУМ
 founder: Вера Дей
 origin: видео-петля
@@ -19,7 +19,7 @@ photographer: В. Дей
 source:
 photographerurl: https://yeltsin.ru
 sourceurl: https://yeltsin.ru
-shortname: ФАНТА
+shortname: ЯЗИЯ
 facebook: 0
 instagram: 0
 youtube: 0
@@ -29,7 +29,7 @@ tumblr: 0
 vkontakte: 0
 soundcloud: 0
 pinterest: 0
-video: https://media.giphy.com/media/l3vQX4tXkLa1PTZ2U/giphy.mp4
+video: https://media.giphy.com/media/xT39DgKMixPKDrwzf2/giphy.mp4
 ---
 
 ## Стоимость
