@@ -11,20 +11,21 @@
 }
 
 .left {
-  width: 25%;
+  width: 10%;
 }
 
 .right {
-  width: 75%;
+  width: 90%;
 }
 
 /* Clear floats after the columns */
 .row:after {
-  content: "";
+  content: ".";
   display: table;
   clear: both;
 }
 </style>
+
 <div class="row">
   <div class="column left" style="background-color:silver;">
 <p>{% include left.html %}</p>
