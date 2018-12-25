@@ -97,7 +97,7 @@ p.caption-position {
 }
 
 h1 {
-	font-family: 'Helvetica Neue', serif;
+	font-family: 'Verdana', serif;
 	font-size: 42px;
 	font-weight: 100;
 	line-height: 1.3em;
@@ -105,7 +105,7 @@ h1 {
 }
 
 h2, h3, h4, h5, h6 {
-	font-family: 'Helvetica Neue';
+	font-family: 'Verdana';
 	font-size: 25px;
 	font-weight: 100;
 	line-height: 1.5em;
@@ -119,12 +119,14 @@ table {
 	line-height: 1.1em;
 	font-weight: 500;
 	color: black;
+	background-color: silver;
 	border-collapse: collapse;
 }
 th, td {
 	padding: 10px;
 	text-align: left;
 	border-bottom: 1px solid #ddd;
+	background-color: silver;
 }
 th {
 	font-family: 'Verdana', serif;
@@ -132,11 +134,13 @@ th {
 	text-align: left;
 	height: auto;
 	vertical-align: center;
+	background-color: silver;
 }
 td {
 	font-weight: 500;
 	height: auto;
 	vertical-align: center;
+	background-color: silver;
 }
 
 tr:hover {
@@ -153,18 +157,21 @@ table.top {
 	color: black;
 	border-collapse: collapse;
 	margin-left: 1px;
+	background-color: silver;
 }
 
 table.top th, td {
 	padding: 10px;
 	text-align: left;
 	border-bottom: 1px solid #ddd;
+	background-color: silver;
 }
 
 table.top td {
 	font-weight: 500;
 	height: auto;
 	vertical-align: center;
+	background-color: silver;
 }
 
 table.top tr:hover {
@@ -175,13 +182,15 @@ table.top tr:hover {
 .toptable-meta {
 	font-weight: 500;
 	color: green;
+	background-color: silver;
+	background-color: silver;
 }
 
 .highlighter-rouge {
 	font-family: 'Verdana';
 	font-size: 16px;
 	line-height: 3em;
-	font-weight: 300;
+	font-weight: 100;
 	color: black;
 	border: solid 1px silver;
 	background-color: #DCDCDC;
@@ -198,7 +207,7 @@ strong {
 	font-family: 'Verdana';
 	font-size: 17px;
 	line-height: 0.8em;
-	font-weight: 900;
+	font-weight: 200;
 }
 em {
 	color: black;
