@@ -3,14 +3,14 @@
 
 .rex {
 	font-family: 'Verdana';
-	font-size: 15px;
+	font-size: 20px;
 	font-weight: 100;
 	line-height: 1em;
 	color: black;
 }
 .rates-top {
 	font-family: 'Verdana';
-	font-size: 15px;
+	font-size: 20px;
 	font-weight: 100;
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
@@ -18,7 +18,7 @@
 
 .rates-top:hover {
 	font-family: 'Verdana';
-	font-size: 15px;
+	font-size: 20px;
 	font-weight: 100;
 	-webkit-filter: grayscale(0%);
 	filter: grayscale(0%);
@@ -27,7 +27,7 @@
 
 .memo {
 	font-family: 'Verdana', serif;
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 1em;
 	font-weight: 100;
 	color: black;
@@ -35,22 +35,22 @@
 
 .intro {
 	font-family: 'Verdana';
-	font-size: 15px;
+	font-size: 20px;
 	font-weight: 100;
 	line-height: 1em;
 	list-style-type: none;
 }
 
 body {
-	max-width: 500px;
+	max-width: 800px;
 	margin: auto;
-	padding: 20px;
+	padding: 1px;
 	background: silver;
 }
 
 .date {
 	font-family: 'Verdana', serif;
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 1em;
 	font-weight: 100;
 	color: black;
@@ -58,7 +58,7 @@ body {
 
 p {
 	font-family: 'Verdana', serif;
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 1em;
 	font-weight: 100;
 	color: black;
@@ -66,7 +66,7 @@ p {
 
 p.foot {
 	font-family: 'Verdana', serif;
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 1em;
 	font-weight: 100;
 }
@@ -74,14 +74,14 @@ p.foot {
 
 p.caption-name {
 	font-family: 'Verdana', serif;
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 1em;
 	font-weight: 100;
 }
 
 p.caption-position {
 	font-family: 'Verdana', serif;
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 1em;
 	font-weight: 100;
 }
@@ -98,7 +98,7 @@ p.caption-position {
 
 h1 {
 	font-family: 'Verdana', serif;
-	font-size: 15px;
+	font-size: 20px;
 	font-weight: 100;
 	line-height: 1em;
 	color: black;
@@ -106,7 +106,7 @@ h1 {
 
 h2, h3, h4, h5, h6 {
 	font-family: 'Verdana';
-	font-size: 15px;
+	font-size: 20px;
 	font-weight: 200;
 	line-height: 1em;
 	color: black;
@@ -115,7 +115,7 @@ h2, h3, h4, h5, h6 {
 table {
 	width: 100%;
 	font-family: 'Verdana', serif;
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 1em;
 	font-weight: 100;
 	color: black;
@@ -151,7 +151,7 @@ tr:hover {
 table.top {
 	width: 100%;
 	font-family: 'Verdana', serif;
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 1em;
 	font-weight: 200;
 	color: black;
@@ -188,7 +188,7 @@ table.top tr:hover {
 
 .highlighter-rouge {
 	font-family: 'Verdana';
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 1em;
 	font-weight: 100;
 	color: black;
@@ -205,26 +205,26 @@ del {
 strong {
 	color: black;
 	font-family: 'Verdana';
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 1em;
 	font-weight: 200;
 }
 em {
 	color: black;
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 1em;
 	font-weight: 100;
 }
 li {
 	font-family: 'Verdana';
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 1em;
 	font-weight: 100;
 	color: #4e80d8;
 }
 ul {
 	font-family: 'Verdana', serif;
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 1em;
 	font-weight: 100;
 	color: #4e80d8;
@@ -232,21 +232,21 @@ ul {
 a.one:link {
 	color: #4e80d8;
 	font-family: 'Verdana';
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 1em;
 	font-weight: 100;
 }
 a.one:visited {
 	color: #4e80d8;
 	font-family: 'Verdana';
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 1em;
 	font-weight: 100;
 }
 a.one:hover {
 	color: #4e80d8;
 	font-family: 'Verdana';
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 1em;
 	font-weight: 100;
 	text-decoration: underline;
