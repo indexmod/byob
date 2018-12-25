@@ -1,5 +1,5 @@
 ---
-title: Video A
+title: Template
 permalink: template
 layout: default
 originlang: Rus.
