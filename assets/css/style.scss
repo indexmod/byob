@@ -306,3 +306,9 @@ div.column {
 div.row {
 	background-color: silver;
 }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
