@@ -1,31 +1,30 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
 
 .rex {
-	font-family: 'Helvetica Neue';
+	font-family: 'Verdana';
 	font-size: 20px;
 	font-weight: 100;
 	line-height: 1.5em;
 	color: black;
 }
 .rates-top {
-	font-family: 'Monaco';
+	font-family: 'Verdana';
 	font-size: 19px;
 	font-weight: 100;
 	-webkit-filter: grayscale(99%);
 	filter: grayscale(99%);
 }
 .rates-top:hover {
-	font-family: 'Monaco';
+	font-family: 'Verdana';
 	font-size: 19px;
 	font-weight: 100;
 	-webkit-filter: grayscale(0%);
 	filter: grayscale(0%);
 }
 .memo {
-	font-family: 'Old Standard TT', serif;
+	font-family: 'Verdana', serif;
 	font-size: 19px;
 	line-height: 1.5em;
 	font-weight: 900;
@@ -53,7 +52,7 @@ body {
 	color: black;
 }
 p {
-	font-family: 'Old Standard TT', serif;
+	font-family: 'Verdana', serif;
 	font-size: 20px;
 	line-height: 1.5em;
 	font-weight: 900;
@@ -61,7 +60,7 @@ p {
 }
 
 p.foot {
-	font-family: 'Old Standard TT', serif;
+	font-family: 'Verdana', serif;
 	font-size: 15px;
 	line-height: 1em;
 	font-weight: 900;
@@ -69,7 +68,7 @@ p.foot {
 
 
 p.caption-name {
-	font-family: 'Old Standard TT', serif;
+	font-family: 'Verdana', serif;
 	font-size: 19px;
 	line-height: 1.5em;
 	font-weight: 900;
@@ -89,16 +88,16 @@ p.caption-position {
 	color: black;
 }
 h1 {
-	font-family: 'Old Standard TT', serif;
+	font-family: 'Helavetica Neue', serif;
 	font-size: 42px;
-	font-weight: 900;
+	font-weight: 100;
 	line-height: 1.3em;
 	color: black;
 }
 h2, h3, h4, h5, h6 {
-	font-family: 'Verdana';
+	font-family: 'Helavetica Neue';
 	font-size: 25px;
-	font-weight: 900;
+	font-weight: 200;
 	line-height: 1.5em;
 	color: black;
 }
@@ -193,14 +192,14 @@ li {
 	font-family: 'Verdana';
 	font-size: 20px;
 	line-height: 1.5em;
-	font-weight: 900;
+	font-weight: 100;
 	color: #4e80d8;
 }
 ul {
-	font-family: 'Old Standard TT', serif;
+	font-family: 'Verdana', serif;
 	font-size: 20px;
 	line-height: 1.5em;
-	font-weight: 900;
+	font-weight: 100;
 	color: #4e80d8;
 }
 a.one:link {
@@ -208,46 +207,46 @@ a.one:link {
 	font-family: 'Verdana';
 	font-size: 20px;
 	line-height: 1.5em;
-	font-weight: 900;
+	font-weight: 100;
 }
 a.one:visited {
 	color: #4e80d8;
 	font-family: 'Verdana';
 	font-size: 20px;
 	line-height: 1.5em;
-	font-weight: 900;
+	font-weight: 100;
 }
 a.one:hover {
 	color: green;
 	font-family: 'Verdana';
 	font-size: 20px;
 	line-height: 1.5em;
-	font-weight: 900;
+	font-weight: 100;
 }
 a:link {
 	color: #4e80d8;
 	text-decoration: none;
-	font-weight: 900;
+	font-weight: 100;
 }
 a:visited {
 	color: #4e80d8;
 	text-decoration: none;
-	font-weight: 900;
+	font-weight: 100;
 }
 a:hover {
 	color: green;
 	text-decoration: none;
-	font-weight: 900;
+	font-weight: 200;
 }
 a:active {
 	color: #4e80d8;
 	text-decoration: none;
-	font-weight: 900;
+	font-weight: 200;
 }
 .footnote {
 	color: #4e80d8;
 	text-decoration: none;
-	font-weight: 900;
+	font-weight: 100;
 }
 img {
 	max-width: 95%;
