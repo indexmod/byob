@@ -15,6 +15,8 @@ theme: jekyll-theme-minimal
 include: ['.htaccess']
 
 exclude:
+  template.md
+  template.html
 
 use_github_wiki: false
 use_prose_io: true

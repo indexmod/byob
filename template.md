@@ -2,6 +2,7 @@
 title: Template
 permalink: template
 layout: default
+exclude: true
 originlang: Rus.
 originspell: Новогодняя фантазия
 appearing: Создано
