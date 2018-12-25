@@ -3,22 +3,22 @@
 
 .rex {
 	font-family: 'Verdana';
-	font-size: 20px;
+	font-size: 10px;
 	font-weight: 100;
-	line-height: 1.5em;
+	line-height: 1em;
 	color: black;
 }
 .rates-top {
 	font-family: 'Verdana';
-	font-size: 19px;
+	font-size: 10px;
 	font-weight: 100;
-	-webkit-filter: grayscale(99%);
-	filter: grayscale(99%);
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 
 .rates-top:hover {
 	font-family: 'Verdana';
-	font-size: 19px;
+	font-size: 10px;
 	font-weight: 100;
 	-webkit-filter: grayscale(0%);
 	filter: grayscale(0%);
@@ -27,22 +27,22 @@
 
 .memo {
 	font-family: 'Verdana', serif;
-	font-size: 19px;
-	line-height: 1.2em;
+	font-size: 10px;
+	line-height: 1em;
 	font-weight: 100;
 	color: black;
 }
 
 .intro {
 	font-family: 'Verdana';
-	font-size: 20px;
+	font-size: 10px;
 	font-weight: 100;
-	line-height: 1.2em;
+	line-height: 1em;
 	list-style-type: none;
 }
 
 body {
-	max-width: 600px;
+	max-width: 100%;
 	margin: auto;
 	padding: 20px;
 	background: silver;
@@ -50,39 +50,39 @@ body {
 
 .date {
 	font-family: 'Verdana', serif;
-	font-size: 20px;
-	line-height: 1.2em;
+	font-size: 10px;
+	line-height: 1em;
 	font-weight: 100;
 	color: black;
 }
 
 p {
 	font-family: 'Verdana', serif;
-	font-size: 20px;
-	line-height: 1.2em;
+	font-size: 10px;
+	line-height: 1em;
 	font-weight: 100;
 	color: black;
 }
 
 p.foot {
 	font-family: 'Verdana', serif;
-	font-size: 20px;
-	line-height: 1.2em;
+	font-size: 10px;
+	line-height: 1em;
 	font-weight: 100;
 }
 
 
 p.caption-name {
 	font-family: 'Verdana', serif;
-	font-size: 20px;
-	line-height: 1.2em;
+	font-size: 10px;
+	line-height: 1em;
 	font-weight: 100;
 }
 
 p.caption-position {
 	font-family: 'Verdana', serif;
-	font-size: 20px;
-	line-height: 1.2em;
+	font-size: 10px;
+	line-height: 1em;
 	font-weight: 100;
 }
 
@@ -98,26 +98,26 @@ p.caption-position {
 
 h1 {
 	font-family: 'Verdana', serif;
-	font-size: 42px;
+	font-size: 10px;
 	font-weight: 100;
-	line-height: 1.3em;
+	line-height: 1em;
 	color: black;
 }
 
 h2, h3, h4, h5, h6 {
 	font-family: 'Verdana';
-	font-size: 25px;
-	font-weight: 100;
-	line-height: 1.5em;
+	font-size: 10px;
+	font-weight: 200;
+	line-height: 1em;
 	color: black;
 }
 
 table {
 	width: 100%;
 	font-family: 'Verdana', serif;
-	font-size: 17px;
-	line-height: 1.1em;
-	font-weight: 500;
+	font-size: 10px;
+	line-height: 1em;
+	font-weight: 100;
 	color: black;
 	background-color: silver;
 	border-collapse: collapse;
@@ -125,35 +125,35 @@ table {
 th, td {
 	padding: 10px;
 	text-align: left;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid green;
 	background-color: silver;
 }
 th {
 	font-family: 'Verdana', serif;
-	font-weight: 200;
+	font-weight: 100;
 	text-align: left;
 	height: auto;
 	vertical-align: center;
 	background-color: silver;
 }
 td {
-	font-weight: 500;
+	font-weight: 100;
 	height: auto;
 	vertical-align: center;
 	background-color: silver;
 }
 
 tr:hover {
-	background-color: #DCDCDC;
-	font-weight: 500;
+	background-color: grey;
+	font-weight: 200;
 }
 
 table.top {
 	width: 100%;
 	font-family: 'Verdana', serif;
-	font-size: 17px;
-	line-height: 1.1em;
-	font-weight: 500;
+	font-size: 10px;
+	line-height: 1em;
+	font-weight: 200;
 	color: black;
 	border-collapse: collapse;
 	margin-left: 1px;
@@ -163,92 +163,93 @@ table.top {
 table.top th, td {
 	padding: 10px;
 	text-align: left;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid green;
 	background-color: silver;
 }
 
 table.top td {
-	font-weight: 500;
+	font-weight: 100;
 	height: auto;
 	vertical-align: center;
 	background-color: silver;
 }
 
 table.top tr:hover {
-	background-color: #DCDCDC;
-	font-weight: 500;
+	background-color: grey;
+	font-weight: 100;
 }
 
 .toptable-meta {
-	font-weight: 500;
-	color: green;
+	font-weight: 100;
+	color: red;
 	background-color: silver;
 	background-color: silver;
 }
 
 .highlighter-rouge {
 	font-family: 'Verdana';
-	font-size: 16px;
-	line-height: 3em;
+	font-size: 10px;
+	line-height: 1em;
 	font-weight: 100;
 	color: black;
 	border: solid 1px silver;
-	background-color: #DCDCDC;
+	background-color: grey;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 	padding: 9px 9px;
 }
 del {
-	color: #DCDCDC;
+	color: grey;
 }
 strong {
 	color: black;
 	font-family: 'Verdana';
-	font-size: 17px;
-	line-height: 0.8em;
+	font-size: 10px;
+	line-height: 1em;
 	font-weight: 200;
 }
 em {
 	color: black;
-	font-size: 17px;
-	line-height: 0.8em;
+	font-size: 10px;
+	line-height: 1em;
 	font-weight: 100;
 }
 li {
 	font-family: 'Verdana';
-	font-size: 20px;
-	line-height: 1.5em;
+	font-size: 10px;
+	line-height: 1em;
 	font-weight: 100;
 	color: #4e80d8;
 }
 ul {
 	font-family: 'Verdana', serif;
-	font-size: 20px;
-	line-height: 1.5em;
+	font-size: 10px;
+	line-height: 1em;
 	font-weight: 100;
 	color: #4e80d8;
 }
 a.one:link {
 	color: #4e80d8;
 	font-family: 'Verdana';
-	font-size: 20px;
-	line-height: 1.5em;
+	font-size: 10px;
+	line-height: 1em;
 	font-weight: 100;
 }
 a.one:visited {
 	color: #4e80d8;
 	font-family: 'Verdana';
-	font-size: 20px;
-	line-height: 1.5em;
+	font-size: 10px;
+	line-height: 1em;
 	font-weight: 100;
 }
 a.one:hover {
-	color: green;
+	color: #4e80d8;
 	font-family: 'Verdana';
-	font-size: 20px;
-	line-height: 1.5em;
+	font-size: 10px;
+	line-height: 1em;
 	font-weight: 100;
+	text-decoration: underline;
 }
 a:link {
 	color: #4e80d8;
@@ -261,14 +262,14 @@ a:visited {
 	font-weight: 100;
 }
 a:hover {
-	color: green;
-	text-decoration: none;
-	font-weight: 200;
+	color: #4e80d8;
+	text-decoration: underline;
+	font-weight: 100;
 }
 a:active {
 	color: #4e80d8;
 	text-decoration: none;
-	font-weight: 200;
+	font-weight: 100;
 }
 .footnote {
 	color: #4e80d8;
@@ -276,12 +277,12 @@ a:active {
 	font-weight: 100;
 }
 img {
-	max-width: 95%;
-	min-width: 95%;
+	max-width: 99%;
+	min-width: 99%;
 	height: auto;
 	margin: 0em 0em 0em 0em;
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
+	-webkit-filter: grayscale(50%);
+	filter: grayscale(150%);
 }
 .container {
 	width: 50px;
@@ -308,7 +309,7 @@ div.row {
 }
 
 .row:after {
-  content: "";
+  content: ".";
   display: table;
   clear: both;
 }
