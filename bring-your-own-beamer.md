@@ -29,6 +29,7 @@ tumblr: 0
 vkontakte: 307
 soundcloud: 0
 pinterest: 0
+video: https://media.giphy.com/media/2dGZ5kHU4YXcc/giphy.mp4
 ---
 
 BYOB is a way of making a big exhibition with zero budget. It is an exploration of the medium of projection.

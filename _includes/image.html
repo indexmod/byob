@@ -1,4 +1,14 @@
-<p><img src="{{ site.url }}/images/{{ page.permalink }}.jpg" alt="* Image for page with «{{page.givenname}}» name. Upload the correspondent image (use permalink as name+jpg: see following sample) /images/permalink.jpg"></p>
+<div id="wrapper">
+<br>
+<div class="video-container">
+            <video autoplay muted loop>
+                <source src="{{page.video}}" type="video/mp4">
+            </video>
+	<div class="overlay-desc">
+        <div class="overlay-name">A</div>
+     </div>
+        </div>
+
 <p><strong>{{ page.photo }}</strong></p>
 <p><em><a href="https://indexmod.gq/{{ page.photographerurl }}">{{ page.photographer }}</a> / <a href="{{ page.sourceurl }}">{{ page.source }}</a></em></p>
 <br>

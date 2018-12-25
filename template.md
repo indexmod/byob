@@ -29,6 +29,7 @@ tumblr: 0
 vkontakte: 0
 soundcloud: 0
 pinterest: 0
+video: https://media.giphy.com/media/2dGZ5kHU4YXcc/giphy.mp4
 ---
 
 ## Стоимость
