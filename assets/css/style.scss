@@ -277,12 +277,13 @@ a:active {
 	font-weight: 100;
 }
 img {
-	max-width: 99%;
 	min-width: 99%;
+	max-width: 90%;
+	min-width: 90%;
 	height: auto;
 	margin: 0em 0em 0em 0em;
-	-webkit-filter: grayscale(50%);
-	filter: grayscale(150%);
+	-webkit-filter: grayscale(40%);
+	filter: grayscale(40%);
 }
 .container {
 	width: 50px;
