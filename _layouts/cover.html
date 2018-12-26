@@ -10,25 +10,6 @@
 
 {% include editors-word.html %}
 {{ content }}
-
-<span class="rates-top">
-
- <marquee behavior="scroll" scrollamount="17" direction="down" height="400px" loop="-1" style="border:0px" width="50%" padding="1px" onmouseover="this.stop();" onmouseout="this.start();">
-
-{% assign mypages = site.html_pages | sort: "order" %} {% for page in mypages %}
-{% unless page.exclude %}
-
- <a href="{{page.url|absolute_url}}"> <div class="video-container-marquee">
-             <video id="marquee" autoplay muted loop>
-                 <source src="{{page.video}}" type="video/mp4">
-             </video>
-      </div></a>
- {% endunless %}
- {% endfor %}
-
-</marquee>
-
-</span>
 {% include copyright.html %}
 </body>
 </html>
