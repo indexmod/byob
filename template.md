@@ -35,11 +35,6 @@ video: https://media.giphy.com/media/2dGZ5kHU4YXcc/giphy.mp4
 
 ## Стоимость
 
-|{{ indexmod }}|{{ indexmod }}|{{ indexmod }}|
-|-|-|-|
-|Аренда|Квартира|Пространство|
-|Оператор|Сет 1|Сет 2|
-
 ## Acronym of BYOB
 
 BYOB is an acronym for “Bring Your Own Beamer”. In Europe projectors are often referred to as “beamers”.

@@ -320,3 +320,24 @@ div.row {
 video {
   transform: rotateY(-30deg);
 }
+
+.video-wrapper-left {
+  perspective: 500px;
+}
+video.left {
+  transform: rotateY(-60deg);
+}
+
+.video-wrapper-middle {
+  perspective: 500px;
+}
+video.middle {
+  transform: rotateX(-120deg);
+}
+
+.video-wrapper-right {
+  perspective: 1200px;
+}
+video.right {
+  transform: rotateZ(-45deg);
+}
