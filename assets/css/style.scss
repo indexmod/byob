@@ -318,18 +318,18 @@ div.row {
   perspective: 1000px;
 }
 video.marquee {
-	width: 320px;
+	width: 200px;
 	height: auto;
-	transform: rotateY(-45deg);
+	transform: rotateY(-30deg);
 }
 
 .video-wrapper-image {
-  perspective: 2000px;
+  perspective: 1000px;
 }
 video.image {
-	width: 720px;
+	width: 100px;
 	height: auto;
-	transform: rotateY(-45deg);
+	transform: rotateY(-30deg);
 }
 
 .video-wrapper-left {
