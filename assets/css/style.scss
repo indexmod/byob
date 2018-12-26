@@ -64,6 +64,14 @@ p {
 	color: black;
 }
 
+pre {
+	font-family: 'Verdana', serif;
+	font-size: 20px;
+	line-height: 1.4em;
+	font-weight: 100;
+	color: black;
+}
+
 p.foot {
 	font-family: 'Verdana', serif;
 	font-size: 20px;
@@ -98,7 +106,7 @@ p.caption-position {
 
 h1 {
 	font-family: 'Verdana', serif;
-	font-size: 20px;
+	font-size: 30px;
 	font-weight: 100;
 	line-height: 1.4em;
 	color: black;
@@ -106,7 +114,7 @@ h1 {
 
 h2, h3, h4, h5, h6 {
 	font-family: 'Verdana';
-	font-size: 20px;
+	font-size: 25px;
 	font-weight: 200;
 	line-height: 1.4em;
 	color: black;
@@ -192,7 +200,7 @@ table.top tr:hover {
 	line-height: 1.4em;
 	font-weight: 100;
 	color: black;
-	border: solid 1px Gainsboro;
+	border: solid 1px black;
 	background-color: grey;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -276,22 +284,7 @@ a:active {
 	text-decoration: none;
 	font-weight: 100;
 }
-img {
-	max-width: 90%;
-	min-width: 90%;
-	height: auto;
-	margin: 0em 0em 0em 0em;
-	-webkit-filter: grayscale(40%);
-	filter: grayscale(40%);
-}
-.container {
-	width: 50px;
-}
-.container img {
-	display: block;
-	width: 100%;
-	height: auto;
-}
+
 * {
 	box-sizing: border-box;
 }
