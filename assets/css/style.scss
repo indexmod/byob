@@ -324,49 +324,37 @@ div.row {
   clear: both;
 }
 
-.video-container-marquee {
+.video-wrapper-marquee {
   perspective: 1000px;
 }
 video.marquee {
-	width: 200px;
-	height: auto;
-	transform: rotateY(-30deg);
+  transform: rotateY(-30deg);
 }
 
 .video-wrapper-image {
   perspective: 1000px;
 }
 video.image {
-	width: 100px;
-	height: auto;
-	transform: rotateY(-30deg);
+  transform: rotateY(-30deg);
 }
 
 .video-wrapper-left {
   perspective: 1000px;
 }
 video.left {
-	width: 50px;
-	height: auto;
- transform: rotateY(-30deg);
+  transform: rotateY(-30deg);
 }
 
 .video-wrapper-middle {
- perspective: 1000px;
+  perspective: 1000px;
 }
-
 video.middle {
-	width: 50px;
-	height: auto;
- transform: rotateY(-30deg);
+  transform: rotateY(-30deg);
 }
 
 .video-wrapper-right {
   perspective: 1000px;
 }
-
 video.right {
-	width: 50px;
-	height: auto;
- transform: rotateY(-30deg);
+  transform: rotateY(-30deg);
 }
