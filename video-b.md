@@ -1,53 +1,36 @@
 ---
-title: Video B
+title: Pepsi
 permalink: video-b
 layout: default
 originlang: Rus.
-originspell: Осенняя фантазия
+originspell: Новогодняя
 appearing: Создано
-city: Одесса
-birth: 2018
+city: Москва
+birth: 2017
 givenname: НФ
 familyname:
-othername: Фантазия Щ
+othername: Фантазия
 venue: ГУМ
-founder: Вера Дей
+founder: Андрей Дей
 origin: видео-петля
 profession: для проекции
 photo: Фрагмент произведения
-photographer: В. Дей
+photographer: А. Дей
 source:
-photographerurl: https://yeltsin.ru
-sourceurl: https://yeltsin.ru
-shortname: ФАНТА
+photographerurl: index
+sourceurl: index
+shortname: PEPSI
 facebook: 0
 instagram: 0
 youtube: 0
 vimeo: 0
-twitter: 0
-tumblr: 0
 vkontakte: 0
 soundcloud: 0
-pinterest: 0
-video: https://media.giphy.com/media/l3vQX4tXkLa1PTZ2U/giphy.mp4
+video: https://media.giphy.com/media/2dGZ5kHU4YXcc/giphy.mp4
 ---
 
-## Стоимость
+## Подробности
 
-|{{ indexmod }}|{{ indexmod }}|{{ indexmod }}|
-|-|-|-|
-|Аренда|Квартира|Пространство|
-|Оператор|Сет 1|Сет 2|
+## Ссылки
 
-## Acronym of BYOB
-
-BYOB is an acronym for “Bring Your Own Beamer”. In Europe projectors are often referred to as “beamers”.
-
-## See also
-
-+ [Rafaël Rozendaal](rozendaal-rafael)
-+ [Anne de Vries](vries-anne-de)
-
-## Footnotes
-
-[[1]](#a1) <span id="f1"></span> [About (Byobworldwide.com)](http://www.byobworldwide.com/)
+[[1]](#a1) <span id="f1"></span> [Об авторе](index)

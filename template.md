@@ -4,7 +4,7 @@ permalink: template
 layout: default
 exclude: true
 originlang: Rus.
-originspell: Новогодняя фантазия
+originspell: Новогодняя
 appearing: Создано
 city: Москва
 birth: 2017
@@ -18,32 +18,20 @@ profession: для проекции
 photo: Фрагмент произведения
 photographer: А. Дей
 source:
-photographerurl: https://yeltsin.ru
-sourceurl: https://yeltsin.ru
-shortname: ФАНТА
+photographerurl: index
+sourceurl: index
+shortname: TEMP
 facebook: 0
 instagram: 0
 youtube: 0
 vimeo: 0
-twitter: 0
-tumblr: 0
 vkontakte: 0
 soundcloud: 0
-pinterest: 0
 video: https://media.giphy.com/media/2dGZ5kHU4YXcc/giphy.mp4
 ---
 
-## Стоимость
+## Подробности
 
-## Acronym of BYOB
+## Ссылки
 
-BYOB is an acronym for “Bring Your Own Beamer”. In Europe projectors are often referred to as “beamers”.
-
-## See also
-
-+ [Rafaël Rozendaal](rozendaal-rafael)
-+ [Anne de Vries](vries-anne-de)
-
-## Footnotes
-
-[[1]](#a1) <span id="f1"></span> [About (Byobworldwide.com)](http://www.byobworldwide.com/)
+[[1]](#a1) <span id="f1"></span> [Об авторе](index)
