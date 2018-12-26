@@ -314,38 +314,49 @@ div.row {
   clear: both;
 }
 
-.video-wrapper {
+.video-container-marquee {
+  perspective: 1000px;
+}
+video.marquee {
+	width: 320px;
+	height: auto;
+	transform: rotateY(-45deg);
+}
+
+.video-wrapper-image {
   perspective: 2000px;
 }
-video {
+video.image {
 	width: 720px;
 	height: auto;
 	transform: rotateY(-45deg);
 }
 
 .video-wrapper-left {
-  perspective: 500px;
+  perspective: 1000px;
 }
 video.left {
-	width: 150px;
+	width: 50px;
 	height: auto;
-  transform: rotateY(-60deg);
+ transform: rotateY(-30deg);
 }
 
 .video-wrapper-middle {
-	width: 100px;
-	height: auto;
-  perspective: 500px;
+ perspective: 1000px;
 }
+
 video.middle {
-  transform: rotateX(-120deg);
+	width: 50px;
+	height: auto;
+ transform: rotateY(-30deg);
 }
 
 .video-wrapper-right {
-	width: 80px;
-	height: auto;
-  perspective: 1200px;
+  perspective: 1000px;
 }
+
 video.right {
-  transform: rotateZ(-45deg);
+	width: 50px;
+	height: auto;
+ transform: rotateY(-30deg);
 }
