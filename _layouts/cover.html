@@ -13,19 +13,16 @@
 
 <span class="rates-top">
 
- <marquee behavior="scroll" scrollamount="17" direction="left" height="400px" loop="-1" style="border:0px" width="50%" padding="1px" onmouseover="this.stop();" onmouseout="this.start();">
+ <marquee behavior="scroll" scrollamount="17" direction="down" height="400px" loop="-1" style="border:0px" width="50%" padding="1px" onmouseover="this.stop();" onmouseout="this.start();">
 
 {% assign mypages = site.html_pages | sort: "order" %} {% for page in mypages %}
 {% unless page.exclude %}
 
- <a href="{{page.url|absolute_url}}"> {{ page.shortname }} <span class="rate">{% include indexmod.html %}</a></span> <span class="rex">
- <div class="video-container">
+ <a href="{{page.url|absolute_url}}"> <div class="video-container">
              <video autoplay muted loop>
                  <source src="{{page.video}}" type="video/mp4">
              </video>
- 	<div class="overlay-desc">
-      </div>
-         </div> | </span>
+      </div></a> 
  {% endunless %}
  {% endfor %}
 
