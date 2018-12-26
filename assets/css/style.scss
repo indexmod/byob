@@ -315,10 +315,10 @@ div.row {
 }
 
 .video-wrapper {
-  perspective: 1000px;
+  perspective: 2000px;
 }
 video {
-	width: 320px;
+	width: 720px;
 	height: auto;
 	transform: rotateY(-45deg);
 }
