@@ -45,7 +45,7 @@ body {
 	max-width: 800px;
 	margin: auto;
 	padding: 20px;
-	background: silver;
+	background: Gainsboro;
 }
 
 .date {
@@ -119,14 +119,14 @@ table {
 	line-height: 1em;
 	font-weight: 100;
 	color: black;
-	background-color: silver;
+	background-color: Gainsboro;
 	border-collapse: collapse;
 }
 th, td {
 	padding: 15px;
 	text-align: left;
-	border-bottom: 1px solid rose;
-	background-color: silver;
+	border-bottom: 1px solid black;
+	background-color: Gainsboro;
 }
 th {
 	font-family: 'Verdana', serif;
@@ -134,17 +134,17 @@ th {
 	text-align: left;
 	height: auto;
 	vertical-align: center;
-	background-color: silver;
+	background-color: Gainsboro;
 }
 td {
 	font-weight: 100;
 	height: auto;
 	vertical-align: center;
-	background-color: silver;
+	background-color: Gainsboro;
 }
 
 tr:hover {
-	background-color: grey;
+	background-color: Gainsboro;
 	font-weight: 200;
 }
 
@@ -157,21 +157,21 @@ table.top {
 	color: black;
 	border-collapse: collapse;
 	margin-left: 1px;
-	background-color: silver;
+	background-color: Gainsboro;
 }
 
 table.top th, td {
 	padding: 15px;
 	text-align: left;
 	border-bottom: 1px solid rose;
-	background-color: silver;
+	background-color: Gainsboro;
 }
 
 table.top td {
 	font-weight: 100;
 	height: auto;
 	vertical-align: center;
-	background-color: silver;
+	background-color: Gainsboro;
 }
 
 table.top tr:hover {
@@ -182,8 +182,8 @@ table.top tr:hover {
 .toptable-meta {
 	font-weight: 100;
 	color: black;
-	background-color: silver;
-	background-color: silver;
+	background-color: Gainsboro;
+	background-color: Gainsboro;
 }
 
 .highlighter-rouge {
@@ -192,7 +192,7 @@ table.top tr:hover {
 	line-height: 1em;
 	font-weight: 100;
 	color: black;
-	border: solid 1px silver;
+	border: solid 1px Gainsboro;
 	background-color: grey;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -301,11 +301,11 @@ div.column {
 	float: left;
 	width: 50%;
 	padding: 10px;
-	background-color: silver;
+	background-color: Gainsboro;
 }
 
 div.row {
-	background-color: silver;
+	background-color: Gainsboro;
 }
 
 .row:after {
