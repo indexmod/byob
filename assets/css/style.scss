@@ -285,6 +285,23 @@ a:active {
 	font-weight: 100;
 }
 
+img {
+	max-width: 95%;
+	min-width: 95%;
+	height: auto;
+	margin: 0em 0em 0em 0em;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+.container {
+	width: 50px;
+}
+.container img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
 * {
 	box-sizing: border-box;
 }
