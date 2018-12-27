@@ -1,32 +1,35 @@
 ---
-title: Pepsi
-permalink: video-b
+title: Tunnel oil
+permalink: tunnel-oil
 layout: default
 originlang: Rus.
-originspell: Новогодняя
+originspell: Тоннель нефть
 appearing: Создано
 city: Москва
-birth: 2017
-givenname: НФ
+birth: 2016
+givenname: Tunnel oil
 familyname:
-othername: Фантазия
-venue: ГУМ
-founder: Андрей Дей
+othername: Тоннель нефть
+size: 1920 x 1080
+price:
+venue: Privat archive
+status: Concept
+artist: Mic Sachkov
+copyright: Mic Sachkov
 origin: видео-петля
 profession: для проекции
 photo: Фрагмент произведения
-photographer: А. Дей
 source:
 photographerurl: index
 sourceurl: index
-shortname: PEPSI
+shortname: TONNELOIL
 facebook: 0
 instagram: 0
 youtube: 0
 vimeo: 0
 vkontakte: 0
 soundcloud: 0
-video: https://media.giphy.com/media/l3nWlvtvAFHcDFKXm/giphy.mp4
+video: https://media.giphy.com/media/Y4sPlc0tG4lbvOD3Vn/giphy.mp4
 ---
 
 ## Подробности
