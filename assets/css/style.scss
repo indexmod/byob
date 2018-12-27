@@ -340,7 +340,7 @@ div.row {
 
 #room {
     position:absolute;
-    width:100px;
+    width:70px;
     min-height:40px;
     z-index:300000;
     bottom:1px;
@@ -351,8 +351,7 @@ div.row {
   perspective: 1000px;
 }
 #left-video {
-	width:100px;
-  transform: rotateY(-40deg);
+  transform: rotateY(-60deg);
 }
 
 .video-wrapper-middle {
