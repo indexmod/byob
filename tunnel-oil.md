@@ -1,6 +1,6 @@
 ---
 title: Tunnel oil
-permalink: video-b
+permalink: tunnel-oil
 layout: default
 originlang: Rus.
 originspell: Тоннель нефть
@@ -22,7 +22,7 @@ photo: Фрагмент произведения
 source:
 photographerurl: index
 sourceurl: index
-shortname: PEPSI
+shortname: TONNELOIL
 facebook: 0
 instagram: 0
 youtube: 0
