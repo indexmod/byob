@@ -338,6 +338,15 @@ div.row {
   transform: rotateY(-30deg);
 }
 
+#room {
+    position:absolute;
+    width:160px;
+    min-height:40px;
+    z-index:300000;
+    bottom:10px;
+    left:10px;
+}
+
 .video-wrapper-left {
   perspective: 1000px;
 }
