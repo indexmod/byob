@@ -26,7 +26,7 @@ youtube: 0
 vimeo: 0
 vkontakte: 0
 soundcloud: 0
-video: https://media.giphy.com/media/l3nWlvtvAFHcDFKXm/giphy.mp4
+video: https://media.giphy.com/media/Y4sPlc0tG4lbvOD3Vn/giphy.mp4
 ---
 
 ## Подробности

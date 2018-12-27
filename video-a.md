@@ -1,25 +1,25 @@
 ---
-title: Cola
-permalink: video-a
+title: My Secret
+permalink: my-secret
 layout: default
 originlang: Rus.
-originspell: Новогодняя
+originspell: Мой секрет
 appearing: Создано
 city: Москва
 birth: 2017
-givenname: НФ
+givenname: My Secret
 familyname:
-othername: Фантазия
-venue: ГУМ
+othername: Мой секрет
+venue: YouTube
 founder: Андрей Дей
 origin: видео-петля
-profession: для проекции
+profession: длина
 photo: Фрагмент произведения
 photographer: А. Дей
 source:
 photographerurl: index
 sourceurl: index
-shortname: COLA
+shortname: MYSECRET
 facebook: 0
 instagram: 0
 youtube: 0
