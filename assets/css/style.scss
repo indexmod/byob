@@ -348,9 +348,10 @@ div.row {
 }
 
 .video-wrapper-left {
-  perspective: 2000px;
+  perspective: 1000px;
 }
 #left-video {
+	width:100px;
   transform: rotateY(-40deg);
 }
 
