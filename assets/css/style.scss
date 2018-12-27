@@ -343,12 +343,12 @@ div.row {
     width:70px;
     min-height:40px;
     z-index:300000;
-    bottom:1px;
+    bottom:-1px;
     left:1px;
 }
 
 .video-wrapper-left {
-  perspective: 1000px;
+  perspective: 2000px;
 }
 #left-video {
   transform: rotateY(-60deg);
