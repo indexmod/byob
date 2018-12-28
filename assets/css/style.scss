@@ -339,17 +339,17 @@ div.row {
 #room {
     position:absolute;
     width:70px;
-    min-height:40px;
+    min-height:50px;
     z-index:2;
     bottom:-10px;
     left:-1px;
 }
 
 .video-wrapper-left {
-  perspective: 3000px;
+  perspective: 2000px;
 }
 #left-video {
-  transform: rotateY(-70deg);
+  transform: rotateY(-50deg);
 }
 
 #gallery {
