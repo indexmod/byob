@@ -20,6 +20,7 @@ size: 1920 x 1080 (Full HD)
 aspect-ratio: 16:9
 frame-rate: 25
 status: in collection
+price: 80000
 sourceurl: https://media.giphy.com/media/2dGZ5kHU4YXcc/giphy.mp4
 shortname: TEMP
 facebook: 0

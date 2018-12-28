@@ -3,6 +3,12 @@
 title: Гром и молния
 timezone: UTC
 description: Произведения цифрового искусства для частных интерьеров или публичных пространств
+room-projector: 30000
+hall-projector: 50000
+street-projector: 100000
+room-computer: 15000
+hall-computer: 20000
+street-computer: 200000
 
 show_sidebar: false
 show_downloads: false
