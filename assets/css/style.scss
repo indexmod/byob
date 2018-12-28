@@ -354,11 +354,29 @@ div.row {
   transform: rotateY(-70deg);
 }
 
+#gallery {
+    position:absolute;
+    width:70px;
+    min-height:40px;
+    z-index:300000;
+    bottom:-1px;
+    left:1px;
+}
+
 .video-wrapper-middle {
   perspective: 1000px;
 }
 #middle-video {
   transform: rotateY(-30deg);
+}
+
+#mall {
+    position:absolute;
+    width:70px;
+    min-height:40px;
+    z-index:300000;
+    bottom:-1px;
+    left:1px;
 }
 
 .video-wrapper-right {
