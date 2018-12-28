@@ -338,7 +338,7 @@ div.row {
 
 #room {
     position:absolute;
-    width:70px;
+    width:120px;
     min-height:50px;
     z-index:2;
     bottom:-10px;
@@ -346,10 +346,10 @@ div.row {
 }
 
 .video-wrapper-left {
-  perspective: 2000px;
+  perspective: 1000px;
 }
 #left-video {
-  transform: rotateY(-50deg);
+  transform: rotateY(-30deg);
 }
 
 #gallery {
