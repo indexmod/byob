@@ -1,18 +1,18 @@
 <table class="top" style="width:100%">
 <tr>
-    <td>Имя: <span class="toptable-meta">{{page.givenname}}</span></td>
+    <td>Название: <span class="toptable-meta">{{page.title}}</span></td>
     </tr>
     <tr>
-    <td>Фамилия: <span class="toptable-meta">{{page.familyname}}</span></td>
+    <td>Автор: <span class="toptable-meta">{{page.author}}</span></td>
     </tr>
     <tr>
-    <td>Другое: <span class="toptable-meta">{{page.othername}}</span></td>
+    <td>Год создания: <span class="toptable-meta">{{page.birth}}</span></td>
     </tr>
     <tr>
-        <td>{{ page.appearing }}: <span class="toptable-meta">{{ page.birth }}</span></td>
+        <td>{{ page.originlang }}: <span class="toptable-meta">{{ page.originspell }}</span></td>
   </tr>
   <tr>
-    <td>Возраст: <span class="toptable-meta">{{ site.time | date: "%Y" | minus: page.birth }}</span></td>
+    <td>Размер: <span class="toptable-meta">{{ page.size }}</span></td>
   </tr>
   <tr>
     <td>Город: <span class="toptable-meta">{{ page.city }}</span></td>
@@ -22,7 +22,7 @@
   </tr>
 
     <tr>
-    <td>Автор: <span class="toptable-meta">{{ page.founder }}</span></td>
+    <td>Владелец: <span class="toptable-meta">{{ page.owner }}</span></td>
   </tr>
     <tr>
     <td>Facebook: <span class="toptable-meta">{{ page.facebook }}</span></td>
@@ -31,21 +31,9 @@
     <td>Instagram: <span class="toptable-meta">{{ page.instagram }}</span></td>
   </tr>
   <tr>
-  <td>Twitter: <span class="toptable-meta">{{ page.twitter }}</span></td>
-</tr>
-    <tr>
-    <td>Vkontakte: <span class="toptable-meta">{{ page.vkontakte }}</span></td>
-  </tr>
-  <tr>
   <td>Vimeo: <span class="toptable-meta">{{ page.vimeo }}</span></td>
 </tr>
     <tr>
     <td>Youtube: <span class="toptable-meta">{{ page.youtube }}</span></td>
   </tr>
-  <tr>
-  <td>Soundcloud: <span class="toptable-meta">{{ page.soundcloud }}</span></td>
-</tr>
-<tr>
-<td>Pinterest: <span class="toptable-meta">{{ page.pinterest }}</span></td>
-</tr>
 </table>
