@@ -1,8 +1,7 @@
 ---
 title: Лобовое стекло
-permalink: template
+permalink: lobovoe-steklo
 layout: default
-exclude: true
 originlang: Rus.
 originspell: Лобовое стекло
 appearing: Создано
