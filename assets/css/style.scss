@@ -336,6 +336,13 @@ div.row {
   transform: rotateY(-30deg);
 }
 
+#video-wrapper-caption
+{
+    position:absolute;
+    width:auto;
+    left:15px;
+}
+
 #room {
     position:absolute;
     width:120px;
