@@ -342,13 +342,13 @@ div.row {
     position:absolute;
     width:70px;
     min-height:40px;
-    z-index:3;
-    bottom:-5px;
-    left:1px;
+    z-index:2;
+    bottom:-10px;
+    left:-1px;
 }
 
 .video-wrapper-left {
-  perspective: 1500px;
+  perspective: 3000px;
 }
 #left-video {
   transform: rotateY(-70deg);
