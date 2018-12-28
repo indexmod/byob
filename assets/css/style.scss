@@ -370,8 +370,8 @@ div.row {
 
 #mall {
 	position:absolute;
-	width:70px;
-	min-height:200px;
+	width:200px;
+	min-height:100px;
 	z-index:300000;
 	bottom:-1px;
 	left:1px;
@@ -381,5 +381,5 @@ div.row {
   perspective: 1000px;
 }
 #right-video {
-  transform: rotateY(-40deg);
+  transform: rotateY(-30deg);
 }

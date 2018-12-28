@@ -1,5 +1,7 @@
 <img src="{{ site.url }}/identity/index.gif" alt="Зевс и Гера"></img>
 
+ <span class="rates-top">
+
 <marquee behavior="scroll" scrollamount="17" direction="down" height="400px" loop="-1" style="border:0px" width="100%" padding="10px" onmouseover="this.stop();" onmouseout="this.start();">
 
 {% assign mypages = site.html_pages | sort: "order" %} {% for page in mypages %}
@@ -13,3 +15,5 @@
  {% endunless %}
  {% endfor %}
 </marquee>
+
+ </span>
