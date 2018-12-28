@@ -371,12 +371,12 @@ div.row {
 }
 
 #mall {
-    position:absolute;
-    width:190px;
-    min-height:40px;
-    z-index:2;
-    bottom:-20px;
-    left:-10px;
+	position:absolute;
+	width:70px;
+	min-height:40px;
+	z-index:300000;
+	bottom:-1px;
+	left:1px;
 }
 
 .video-wrapper-right {
