@@ -2,8 +2,10 @@
 title: Attributions
 permalink: attributions
 layout: info
-
 ---
+
+## Attributions
+
 + Dining room by Yi Chen from the Noun Project
 + Gallery by Made from the Noun Project
 + Party by pxLens from the Noun Project
