@@ -298,7 +298,7 @@ div.row {
   perspective: 1000px;
 }
 #image-video {
-  transform: rotateY(-30deg);
+  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
 }
 
 #video-wrapper-caption
