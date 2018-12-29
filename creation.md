@@ -1,16 +1,13 @@
 ---
-title: Template
-permalink: template
+title: Сотворение
+permalink: creation
 layout: default
-exclude: true
-originlang: Rus.
-originspell: Новогодняя
+originlang: Eng.
+originspell: Creation
 appearing: Создано
 city: Москва
-birth: 2017
-author-givenname: Андрей
-author-familyname: Дей
-author-othername: Галактион
+birth: 2012
+author: Андрей Дей
 expositions: ГУМ, ЦУМ
 owner: Андрей Дей
 curator:
@@ -23,7 +20,8 @@ frame-rate: 25
 duration-sec: 000000
 price-per-sec: 5
 status: in collection
-sourceurl: https://media.giphy.com/media/2dGZ5kHU4YXcc/giphy.mp4
+sourceurl: https://vimeo.com/61410919
+video: https://media.giphy.com/media/KXswazBzHSLQwPDLXJ/giphy.mp4
 ---
 
 ## Подробности
