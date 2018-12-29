@@ -334,8 +334,12 @@ div.row {
     left:0px;
 }
 
+.video-wrapper-middle {
+  position: relative;
+}
+
 #middle-video {
-  transform: rotateY(90deg);
+  transform: rotateY(-30deg);
 }
 
 #mall {
