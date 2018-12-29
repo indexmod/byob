@@ -352,8 +352,8 @@ div.row {
 }
 
 .video-wrapper-right {
-  perspective: 150px;
+  position: relative;
 }
 #right-video {
-  transform: rotateY(-20deg);
+  transform: rotateX(-30deg);
 }
