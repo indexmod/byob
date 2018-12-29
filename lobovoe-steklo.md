@@ -1,13 +1,12 @@
 ---
-title: Template
-permalink: template
+title: Лобовое стекло
+permalink: lobovoe-steklo
 layout: default
-exclude: true
 originlang: Rus.
-originspell: Новогодняя
+originspell: Лобовое стекло
 appearing: Создано
 city: Москва
-birth: 2017
+birth: 2014
 author-givenname: Андрей
 author-familyname: Дей
 author-othername: Галактион
@@ -21,6 +20,7 @@ size: 1920 x 1080 (Full HD)
 aspect-ratio: 16:9
 frame-rate: 25
 status: in collection
+price: 80000
 sourceurl: https://media.giphy.com/media/2dGZ5kHU4YXcc/giphy.mp4
 shortname: TEMP
 facebook: 0
@@ -28,6 +28,8 @@ instagram: 0
 youtube: 0
 vimeo: 0
 vkontakte: 0
+sourceurl: https://vimeo.com/94852717
+video: https://media.giphy.com/media/75Brsd1s8FGeyUe02J/giphy.mp4
 ---
 
 ## Подробности

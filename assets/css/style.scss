@@ -106,7 +106,7 @@ p.caption-position {
 
 h1 {
 	font-family: 'Verdana', serif;
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: 100;
 	line-height: 1.4em;
 	color: black;
@@ -114,8 +114,8 @@ h1 {
 
 h2, h3, h4, h5, h6 {
 	font-family: 'Verdana';
-	font-size: 25px;
-	font-weight: 200;
+	font-size: 20px;
+	font-weight: 900;
 	line-height: 1.4em;
 	color: black;
 }
@@ -126,15 +126,13 @@ table {
 	font-size: 20px;
 	line-height: 1.4em;
 	font-weight: 100;
-	color: black;
-	background-color: Gainsboro;
+	background-color: transparent;
 	border-collapse: collapse;
 }
 th, td {
 	padding: 15px;
 	text-align: left;
 	border-bottom: 1px solid black;
-	background-color: Gainsboro;
 }
 th {
 	font-family: 'Verdana', serif;
@@ -142,13 +140,11 @@ th {
 	text-align: left;
 	height: auto;
 	vertical-align: center;
-	background-color: Gainsboro;
 }
 td {
 	font-weight: 100;
 	height: auto;
 	vertical-align: center;
-	background-color: Gainsboro;
 }
 
 tr:hover {
@@ -162,36 +158,30 @@ table.top {
 	font-size: 20px;
 	line-height: 1.4em;
 	font-weight: 200;
-	color: black;
 	border-collapse: collapse;
 	margin-left: 1px;
-	background-color: Gainsboro;
 }
 
 table.top th, td {
 	padding: 15px;
 	text-align: left;
-	border-bottom: 1px solid rose;
-	background-color: Gainsboro;
+	border-bottom: 1px solid yellow;
 }
 
 table.top td {
 	font-weight: 100;
 	height: auto;
 	vertical-align: center;
-	background-color: Gainsboro;
 }
 
 table.top tr:hover {
-	background-color: White;
+	background-color: white;
 	font-weight: 100;
 }
 
 .toptable-meta {
 	font-weight: 100;
-	color: black;
-	background-color: Gainsboro;
-	background-color: Gainsboro;
+	color: #4e80d8;
 }
 
 .highlighter-rouge {
@@ -237,28 +227,7 @@ ul {
 	font-weight: 100;
 	color: #4e80d8;
 }
-a.one:link {
-	color: #4e80d8;
-	font-family: 'Verdana';
-	font-size: 20px;
-	line-height: 1.4em;
-	font-weight: 100;
-}
-a.one:visited {
-	color: #4e80d8;
-	font-family: 'Verdana';
-	font-size: 20px;
-	line-height: 1.4em;
-	font-weight: 100;
-}
-a.one:hover {
-	color: #4e80d8;
-	font-family: 'Verdana';
-	font-size: 20px;
-	line-height: 1.4em;
-	font-weight: 100;
-	text-decoration: underline;
-}
+
 a:link {
 	color: #4e80d8;
 	text-decoration: none;
@@ -279,11 +248,6 @@ a:active {
 	text-decoration: none;
 	font-weight: 100;
 }
-.footnote {
-	color: #4e80d8;
-	text-decoration: none;
-	font-weight: 100;
-}
 
 img {
 	max-width: 95%;
@@ -293,6 +257,7 @@ img {
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 }
+
 .container {
 	width: 50px;
 }
@@ -310,12 +275,10 @@ img {
 div.column {
 	float: left;
 	width: 50%;
-	padding: 10px;
-	background-color: Gainsboro;
+	padding: 20px;
 }
 
 div.row {
-	background-color: Gainsboro;
 }
 
 .row:after {
@@ -338,20 +301,36 @@ div.row {
   transform: rotateY(-30deg);
 }
 
+#video-wrapper-caption
+{
+    position:relative;
+    width:auto;
+    left:40px;
+}
+
 #room {
     position:absolute;
-    width:70px;
-    min-height:40px;
-    z-index:300000;
-    bottom:-1px;
-    left:1px;
+    width:120px;
+    min-height:50px;
+    z-index:2;
+    bottom:-30px;
+    left:-25px;
 }
 
 .video-wrapper-left {
-  perspective: 1500px;
+  perspective: 1200px;
 }
 #left-video {
-  transform: rotateY(-70deg);
+  transform: rotateY(-30deg);
+}
+
+#gallery {
+    position:absolute;
+    width:110px;
+    min-height:40px;
+    z-index:300000;
+    bottom:-32px;
+    left:0px;
 }
 
 .video-wrapper-middle {
@@ -361,9 +340,18 @@ div.row {
   transform: rotateY(-30deg);
 }
 
+#mall {
+	position:absolute;
+	width:170px;
+	min-height:50px;
+	z-index:300000;
+	bottom:-27px;
+	left:-20px;
+}
+
 .video-wrapper-right {
   perspective: 1000px;
 }
 #right-video {
-  transform: rotateY(-30deg);
+  transform: rotateY(-10deg);
 }
