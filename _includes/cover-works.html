@@ -2,9 +2,11 @@
 {% assign mypages = site.html_pages | sort: "order" %} {% for page in mypages %}
 {% unless page.exclude %}
 
- <a href="{{page.url|absolute_url}}"> <div class="video-container-marquee">
-             <video id="marquee-video" width="100px" autoplay muted loop>
+ <a href="{{page.url|absolute_url}}"> <div class="video-container-cover">
+             <video id="video-cover" width="200px" autoplay muted loop>
                  <source src="{{page.video}}" type="video/mp4">
+                 <source src="{{page.video}}" type="video/ogg">
+                   Your browser does not support HTML5 video.
              </video>
       </div></a>
  {% endunless %}
