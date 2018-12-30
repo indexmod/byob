@@ -1,0 +1,3 @@
+{% assign base-price = page.duration-sec | times: page.price-sec %}
+
+{{ base-price | round: 2 }}

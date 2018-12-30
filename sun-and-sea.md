@@ -18,7 +18,7 @@ duration: 0:06
 size: 1920 х 1080
 aspect-ratio: 16:9
 frame-rate: 25
-duration-sec: 000000
+duration-sec: 30000
 price-per-sec: 5
 status: in collection
 sourceurl: https://media.giphy.com/media/9uIab7uuYpkb7k5qiW/giphy.mp4
