@@ -359,8 +359,8 @@ div.row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: -1px;
-  align-items: stretch;
-  justify-items: center;
+  align-items: left;
+  justify-items: left;
   }
 .grid img {
   border: 1px solid #ccc;
