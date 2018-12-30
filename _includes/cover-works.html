@@ -1,7 +1,7 @@
-
+<wrap>
 {% assign mypages = site.html_pages | sort: "order" %} {% for page in mypages %}
 {% unless page.exclude %}
-<wrap>
+<p>
  <a href="{{page.url|absolute_url}}"> <div class="video-container-cover">
              <video id="video-cover" width="200px" autoplay muted loop>
                  <source src="{{page.video}}" type="video/mp4">
@@ -9,6 +9,8 @@
                    Your browser does not support HTML5 video.
              </video>
       </div></a>
-</wrap>
+      </p>
+
  {% endunless %}
  {% endfor %}
+</wrap>
