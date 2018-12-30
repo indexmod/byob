@@ -1,6 +1,7 @@
 ---
 title: Attributions
 permalink: attributions
+exclude: true
 layout: info
 ---
 
