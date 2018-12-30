@@ -1,12 +1,15 @@
-<!DOCTYPE html>
+<script>
+setTimeout(function(){
+    document.getElementById("room").play();
+}, 5000);
+setTimeout(function(){
+    document.getElementById("gallery").play();
+}, 1000);
+setTimeout(function(){
+    document.getElementById("mall").play();
+}, 1500);
+</script>
 
-<html>
-<head>
-  <title>
-  </title>
-</head>
-
-<body>
   <div class="row">
     <div class="column left">
       <p>{% include toptable.html %}</p>
@@ -67,5 +70,3 @@
       <td>руб.</td>
     </tr>
   </table>
-</body>
-</html>
