@@ -287,13 +287,6 @@ div.row {
   clear: both;
 }
 
-.video-wrapper-cover {
-  perspective: 250px;
-}
-#video-cover {
-  transform: rotateY(-30deg);
-}
-
 .video-wrapper-image {
   perspective: 700px;
 }
@@ -358,10 +351,14 @@ div.row {
   transform: rotateX(-30deg);
 }
 
+#video-cover {
+  position: relative;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: -1px;
   align-items: stretch;
   justify-items: center;
   }
