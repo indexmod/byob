@@ -360,10 +360,12 @@ div.row {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 1px;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-gap: -1px;
   align-items: start;
   justify-items: center;
+  margin: auto;
+  width: 504px;
   }
 .grid img {
   max-width: 100%;
