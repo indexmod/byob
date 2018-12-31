@@ -1,5 +1,5 @@
 ---
-title: Камин (образец)
+title: Камин
 permalink: fire-place
 layout: default
 originlang: Rus.
@@ -7,9 +7,6 @@ originspell: Fire-place
 appearing: Создано
 city: Москва
 birth: 2017
-author-givenname: Андрей
-author-familyname: Дей
-author-othername: Галактион
 expositions: ГУМ, ЦУМ
 owner: Андрей Дей
 curator:
