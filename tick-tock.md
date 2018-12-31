@@ -2,7 +2,6 @@
 title: Тик-так
 permalink: tick-tock
 layout: default
-exclude: true
 originlang: Rus.
 originspell: Tick-Tock
 appearing: Создано
