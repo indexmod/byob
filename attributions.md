@@ -11,3 +11,4 @@ layout: info
 + Gallery by Made from the Noun Project
 + Party by pxLens from the Noun Project
 + Mall by Hector Valle from the Noun Project
++ https://thepracticalartworld.com/2014/06/18/examples-of-artwork-labels/
