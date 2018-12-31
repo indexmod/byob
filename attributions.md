@@ -15,3 +15,4 @@ layout: info
 + https://www.blackboxav.co.uk/2013/07/23/how-do-i-create-a-museum-video-exhibit/
 + http://www.bcdusa.com/solid-state-video
 + http://www.e-katalog.ru/ASUS-TS10-B041D.htm
++ https://www.intel.ru/content/www/ru/ru/products/boards-kits/nuc.html
