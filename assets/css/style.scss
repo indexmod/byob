@@ -304,16 +304,17 @@ div.row {
 
 #room {
     position:absolute;
-    width:110px;
+    width:200px;
     min-height:50px;
-    z-index:2;
-    bottom:-24px;
-    left:-28px;
+    z-index:5;
+    bottom:5px;
+    left:5px;
 }
 
 .video-wrapper-left {
   perspective: 150px;
 }
+
 #left-video {
   transform: rotateY(-30deg);
 }
