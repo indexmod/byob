@@ -5,7 +5,7 @@ exclude: true
 layout: info
 ---
 
-![Проектор]({{ site.url }}/images/{{ page.permalink }}.png)
+<div id="gadget">![Проектор]({{ site.url }}/images/{{ page.permalink }}.png)</div>
 
 ## Casio XJ-UT311WN
 
