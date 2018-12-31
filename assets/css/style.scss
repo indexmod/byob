@@ -268,13 +268,6 @@ div.row {
   clear: both;
 }
 
-img {
-	max-width: 95%;
-	min-width: 95%;
-	height: auto;
-	margin: 0em 0em 0em 0em;
-}
-
 .video-wrapper-image {
   perspective: 700px;
 }
@@ -374,6 +367,13 @@ img {
   max-width: 100%;
 }
 
-#gadget img {
+img {
+	max-width: auto;
+	min-width: auto;
+	height: auto;
+	margin: 0em 0em 0em 0em;
+}
+
+#gadget {
 	width:300px;
 }
