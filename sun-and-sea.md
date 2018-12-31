@@ -1,30 +1,28 @@
 ---
-title: Template
-permalink: template
+title: Солнце и море
+permalink: sun-and-sea
 layout: default
-exclude: true
-originlang: Rus.
-originspell: Новогодняя
+originlang: Eng.
+originspell: The Sun and the Sea
 appearing: Создано
 city: Москва
-birth: 2017
+birth: 2018
 author-givenname: Андрей
 author-familyname: Дей
-author-othername: Галактион
 expositions: ГУМ, ЦУМ
 owner: Андрей Дей
-curator:
+curator: Андрей Дей
 genre: видео-петля
 format: AVI
 duration: 0:06
 size: 1920 х 1080
 aspect-ratio: 16:9
 frame-rate: 25
-duration-sec: 000000
+duration-sec: 30000
 price-per-sec: 5
 status: in collection
-sourceurl: https://media.giphy.com/media/2dGZ5kHU4YXcc/giphy.mp4
-video: https://media.giphy.com/media/28DeEzGNxg8U9AYFmK/giphy.mp4
+sourceurl: https://media.giphy.com/media/9uIab7uuYpkb7k5qiW/giphy.mp4
+video: https://media.giphy.com/media/9uIab7uuYpkb7k5qiW/giphy.mp4
 ---
 
 ## Подробности

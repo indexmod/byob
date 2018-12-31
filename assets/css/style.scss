@@ -148,7 +148,7 @@ td {
 }
 
 tr:hover {
-	background-color: White;
+	background-color: Gainsboro;
 	font-weight: 200;
 }
 
@@ -165,7 +165,7 @@ table.top {
 table.top th, td {
 	padding: 15px;
 	text-align: left;
-	border-bottom: 1px solid yellow;
+	border-bottom: 1px solid black;
 }
 
 table.top td {
@@ -175,7 +175,7 @@ table.top td {
 }
 
 table.top tr:hover {
-	background-color: white;
+	background-color: Gainsboro;
 	font-weight: 100;
 }
 
@@ -287,38 +287,32 @@ div.row {
   clear: both;
 }
 
-.video-wrapper-marquee {
-  perspective: 1000px;
-}
-#marquee-video {
-  transform: rotateY(-30deg);
-}
-
 .video-wrapper-image {
-  perspective: 1000px;
+  perspective: 700px;
 }
 #image-video {
-  transform: rotateY(-30deg);
+  transform: rotateX(0deg) rotateY(-30deg) rotateZ(0deg);
 }
 
 #video-wrapper-caption
 {
     position:relative;
     width:auto;
+		bottom:-30px;
     left:40px;
 }
 
 #room {
     position:absolute;
-    width:120px;
+    width:110px;
     min-height:50px;
     z-index:2;
-    bottom:-30px;
-    left:-25px;
+    bottom:-24px;
+    left:-28px;
 }
 
 .video-wrapper-left {
-  perspective: 1200px;
+  perspective: 150px;
 }
 #left-video {
   transform: rotateY(-30deg);
@@ -329,15 +323,16 @@ div.row {
     width:110px;
     min-height:40px;
     z-index:300000;
-    bottom:-32px;
-    left:0px;
+    bottom:-29px;
+    left:3px;
 }
 
 .video-wrapper-middle {
-  perspective: 1000px;
+  position: relative;
 }
+
 #middle-video {
-  transform: rotateY(-30deg);
+  transform: rotateY(0deg);
 }
 
 #mall {
@@ -345,13 +340,29 @@ div.row {
 	width:170px;
 	min-height:50px;
 	z-index:300000;
-	bottom:-27px;
-	left:-20px;
+	bottom:-25px;
+	left:-4px;
 }
 
 .video-wrapper-right {
-  perspective: 1000px;
+  position: relative;
 }
 #right-video {
-  transform: rotateY(-10deg);
+  transform: rotateX(-30deg);
+}
+
+#video-cover {
+  position: relative;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: -1px;
+  align-items: left;
+  justify-items: left;
+  }
+.grid img {
+  border: 0px;
+  max-width: 100%;
 }

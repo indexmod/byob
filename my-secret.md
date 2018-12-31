@@ -16,15 +16,9 @@ origin: видео-петля
 profession: длина
 photo: Фрагмент произведения
 photographer: А. Дей
-source:
-photographerurl: index
-sourceurl: index
-shortname: MYSECRET
-facebook: 0
-instagram: 0
-youtube: 0
-vimeo: 0
-vkontakte: 0
+sourceurl:
+duration-sec: 4500
+price-per-sec: 5
 soundcloud: 0
 video: https://media.giphy.com/media/XtiggzJWk80qLLpjFI/giphy.mp4
 ---

@@ -1,13 +1,12 @@
 ---
-title: Template
-permalink: template
+title: Кротовая нора
+permalink: krotovaya-nora
 layout: default
-exclude: true
-originlang: Rus.
-originspell: Новогодняя
+originlang: Eng.
+originspell: Mole Hole
 appearing: Создано
 city: Москва
-birth: 2017
+birth: 2018
 author-givenname: Андрей
 author-familyname: Дей
 author-othername: Галактион
@@ -20,11 +19,11 @@ duration: 0:06
 size: 1920 х 1080
 aspect-ratio: 16:9
 frame-rate: 25
-duration-sec: 000000
-price-per-sec: 5
+duration-sec: 45
+price-per-sec: 500
 status: in collection
-sourceurl: https://media.giphy.com/media/2dGZ5kHU4YXcc/giphy.mp4
-video: https://media.giphy.com/media/28DeEzGNxg8U9AYFmK/giphy.mp4
+sourceurl: https://media.giphy.com/media/8YsZtzxlg8qpRu6qZb/giphy.mp4
+video: https://media.giphy.com/media/8YsZtzxlg8qpRu6qZb/giphy.mp4
 ---
 
 ## Подробности

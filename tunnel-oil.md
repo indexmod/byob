@@ -22,13 +22,8 @@ photo: Фрагмент произведения
 source:
 photographerurl: index
 sourceurl: index
-shortname: TONNELOIL
-facebook: 0
-instagram: 0
-youtube: 0
-vimeo: 0
-vkontakte: 0
-soundcloud: 0
+duration-sec: 80000
+price-per-sec: 10
 video: https://media.giphy.com/media/Y4sPlc0tG4lbvOD3Vn/giphy.mp4
 ---
 
