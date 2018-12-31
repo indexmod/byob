@@ -348,7 +348,11 @@ div.row {
 .video-wrapper-right {
   position: relative;
 }
+
 #right-video {
+	position: absolute;
+	bottom: 40px;
+	left:20px;
   transform: rotateX(-30deg);
 }
 
