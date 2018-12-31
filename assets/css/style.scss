@@ -197,36 +197,6 @@ table.top tr:hover {
 	border-radius: 5px;
 	padding: 9px 9px;
 }
-del {
-	color: grey;
-}
-strong {
-	color: black;
-	font-family: 'Verdana';
-	font-size: 20px;
-	line-height: 1.4em;
-	font-weight: 200;
-}
-em {
-	color: black;
-	font-size: 20px;
-	line-height: 1.4em;
-	font-weight: 100;
-}
-li {
-	font-family: 'Verdana';
-	font-size: 20px;
-	line-height: 1.4em;
-	font-weight: 100;
-	color: #4e80d8;
-}
-ul {
-	font-family: 'Verdana', serif;
-	font-size: 20px;
-	line-height: 1.4em;
-	font-weight: 100;
-	color: #4e80d8;
-}
 
 a:link {
 	color: #4e80d8;
@@ -247,6 +217,11 @@ a:active {
 	color: #4e80d8;
 	text-decoration: none;
 	font-weight: 100;
+}
+
+.disqus_thread {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 
 .container {
