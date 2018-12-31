@@ -333,10 +333,14 @@ div.row {
 }
 
 .video-wrapper-middle {
-  position: relative;
+  perspective: 250px;
 }
 
 #middle-video {
+	position: absolute;
+	width:200px;
+	bottom: 50px;
+	left:30px;
   transform: rotateY(0deg);
 }
 

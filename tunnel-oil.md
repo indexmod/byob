@@ -26,9 +26,3 @@ duration-sec: 80000
 price-per-sec: 10
 video: https://media.giphy.com/media/Y4sPlc0tG4lbvOD3Vn/giphy.mp4
 ---
-
-## Подробности
-
-## Ссылки
-
-[[1]](#a1) <span id="f1"></span> [Об авторе](index)
