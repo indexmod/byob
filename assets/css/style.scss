@@ -197,36 +197,6 @@ table.top tr:hover {
 	border-radius: 5px;
 	padding: 9px 9px;
 }
-del {
-	color: grey;
-}
-strong {
-	color: black;
-	font-family: 'Verdana';
-	font-size: 20px;
-	line-height: 1.4em;
-	font-weight: 200;
-}
-em {
-	color: black;
-	font-size: 20px;
-	line-height: 1.4em;
-	font-weight: 100;
-}
-li {
-	font-family: 'Verdana';
-	font-size: 20px;
-	line-height: 1.4em;
-	font-weight: 100;
-	color: #4e80d8;
-}
-ul {
-	font-family: 'Verdana', serif;
-	font-size: 20px;
-	line-height: 1.4em;
-	font-weight: 100;
-	color: #4e80d8;
-}
 
 a:link {
 	color: #4e80d8;
@@ -249,11 +219,7 @@ a:active {
 	font-weight: 100;
 }
 
-img {
-	max-width: 95%;
-	min-width: 95%;
-	height: auto;
-	margin: 0em 0em 0em 0em;
+.disqus_thread {
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 }
@@ -287,6 +253,13 @@ div.row {
   clear: both;
 }
 
+img {
+	max-width: 95%;
+	min-width: 95%;
+	height: auto;
+	margin: 0em 0em 0em 0em;
+}
+
 .video-wrapper-image {
   perspective: 700px;
 }
@@ -309,6 +282,13 @@ div.row {
     z-index:5;
     bottom:-5px;
     left:0px;
+				-webkit-filter: grayscale(0%);
+				filter: grayscale(0%);
+}
+
+#room:hover {
+	-webkit-filter: grayscale(50%);
+	filter: grayscale(50%);
 }
 
 .video-wrapper-left {
