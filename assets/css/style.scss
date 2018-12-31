@@ -253,6 +253,13 @@ div.row {
   clear: both;
 }
 
+img {
+	max-width: 95%;
+	min-width: 95%;
+	height: auto;
+	margin: 0em 0em 0em 0em;
+}
+
 .video-wrapper-image {
   perspective: 700px;
 }
