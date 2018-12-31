@@ -249,15 +249,6 @@ a:active {
 	font-weight: 100;
 }
 
-img {
-	max-width: 95%;
-	min-width: 95%;
-	height: auto;
-	margin: 0em 0em 0em 0em;
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-}
-
 .container {
 	width: 50px;
 }
@@ -309,6 +300,13 @@ div.row {
     z-index:5;
     bottom:-5px;
     left:0px;
+				-webkit-filter: grayscale(0%);
+				filter: grayscale(0%);
+}
+
+#room:hover {
+	-webkit-filter: grayscale(50%);
+	filter: grayscale(50%);
 }
 
 .video-wrapper-left {
