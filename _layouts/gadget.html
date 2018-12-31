@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<head>
+{% include meta.html %}
+{% include favicon.html %}
+</head>
+<body>
+<div id="gadget">![Гаджет]({{ site.url }}/images/{{ page.permalink }}.png)</div>
+<h1>{{ page.title }}</h1>
+{{ content }}
+<p>2018 — {{ site.time | date: "%Y" }} © «{{ site.title }}». Сделано Indexmod. <a href="/attributions">Attributions</a></p>
