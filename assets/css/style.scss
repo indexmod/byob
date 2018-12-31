@@ -316,6 +316,10 @@ div.row {
 }
 
 #left-video {
+	position: absolute;
+	width:110px;
+	bottom: 40px;
+	left:20px;
   transform: rotateY(-20deg);
 }
 
