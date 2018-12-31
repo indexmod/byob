@@ -8,7 +8,7 @@ originspell: Tick-Tock
 appearing: Создано
 city: Москва
 birth: 2017
-author-givenname:
+author: Галактион
 author-familyname:
 author-othername: Галактион
 expositions: ГУМ, ЦУМ
