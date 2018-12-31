@@ -8,4 +8,4 @@
 <img src="{{ site.url }}/images/{{ page.permalink }}.png" alt="Гаджет"/></div>
 <h1>{{ page.title }}</h1>
 {{ content }}
-<p>2018 — {{ site.time | date: "%Y" }} © «{{ site.title }}». Сделано Indexmod. <a href="/attributions">Attributions</a></p>
+{% include copyright.html %}
