@@ -7,8 +7,12 @@ room-projector: 167480
 hall-projector: 0
 street-projector: 0
 room-player: 11250
-hall-player: 0
-street-player: 0
+hall-player: 11250
+street-player: 11250
+room-screen: 0
+hall-screen: 35000
+street-screen: 70000
+
 
 show_sidebar: false
 show_downloads: false

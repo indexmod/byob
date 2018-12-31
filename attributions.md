@@ -17,3 +17,5 @@ layout: info
 + http://www.e-katalog.ru/ASUS-TS10-B041D.htm
 + https://www.intel.ru/content/www/ru/ru/products/boards-kits/nuc.html
 + https://www.interpretationshop.co.uk/
++ https://gefestexpo.ru/showcase.html
++ http://dlyavitrin.ru/videovitrina-pod-klyuch.html
