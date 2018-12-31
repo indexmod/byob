@@ -16,3 +16,4 @@ layout: info
 + http://www.bcdusa.com/solid-state-video
 + http://www.e-katalog.ru/ASUS-TS10-B041D.htm
 + https://www.intel.ru/content/www/ru/ru/products/boards-kits/nuc.html
++ https://www.interpretationshop.co.uk/
