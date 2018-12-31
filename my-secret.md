@@ -22,9 +22,3 @@ price-per-sec: 5
 soundcloud: 0
 video: https://media.giphy.com/media/XtiggzJWk80qLLpjFI/giphy.mp4
 ---
-
-## Подробности
-
-## Ссылки
-
-[[1]](#a1) <span id="f1"></span> [Об авторе](index)

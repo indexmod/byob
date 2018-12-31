@@ -25,9 +25,3 @@ price-per-sec: 3
 sourceurl: https://vimeo.com/94852717
 video: https://media.giphy.com/media/75Brsd1s8FGeyUe02J/giphy.mp4
 ---
-
-## Подробности
-
-## Ссылки
-
-[[1]](#a1) <span id="f1"></span> [Об авторе](index)

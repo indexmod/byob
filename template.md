@@ -26,11 +26,3 @@ status: in collection
 sourceurl: https://media.giphy.com/media/2dGZ5kHU4YXcc/giphy.mp4
 video: https://media.giphy.com/media/28DeEzGNxg8U9AYFmK/giphy.mp4
 ---
-
-## Подробности
-
-Съешь ещё этих мягких французских булок, да выпей чаю. Съешь ещё этих мягких французских булок, да выпей чаю. Съешь ещё этих мягких французских булок, да выпей чаю.
-
-## Ссылки
-
-[[1]](#a1) <span id="f1"></span> [Об авторе](index)

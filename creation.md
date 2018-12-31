@@ -23,9 +23,3 @@ status: in collection
 sourceurl: https://vimeo.com/61410919
 video: https://media.giphy.com/media/KXswazBzHSLQwPDLXJ/giphy.mp4
 ---
-
-## Подробности
-
-## Ссылки
-
-[[1]](#a1) <span id="f1"></span> [Об авторе](index)
