@@ -19,3 +19,4 @@ layout: info
 + https://www.interpretationshop.co.uk/
 + https://gefestexpo.ru/showcase.html
 + http://dlyavitrin.ru/videovitrina-pod-klyuch.html
++ http://solutions.3mrussia.ru/3MContentRetrievalAPI/BlobServlet?lmd=1232975402000&locale=ru_RU&assetType=MMM_Image&assetId=1180609317318&blobAttribute=ImageFile
