@@ -285,7 +285,7 @@ div.row {
 
 #image-left-top {
 	position:absolute;
-	width:200px;
+	width:180px;
 	z-index:300000;
 	bottom:0px;
 	left:0px;
@@ -299,13 +299,13 @@ div.row {
 }
 
 .video-wrapper-left {
-  perspective: 500px;
+  perspective: 250px;
 }
 
 #left-video {
 	position: absolute;
-	width:200px;
-	bottom: 0px;
+	width:180px;
+	bottom: 15px;
 	left:0px;
   transform: rotateY(-30deg);
 	filter:opacity(50%);
@@ -313,7 +313,7 @@ div.row {
 
 #image-left-bottom {
 	position:absolute;
-	width:200px;
+	width:180px;
 	z-index:-300000;
 	bottom:0px;
 	left:0px;
@@ -328,7 +328,7 @@ div.row {
 
 #image-middle-top {
 	position:absolute;
-	width:200px;
+	width:180px;
 	z-index:300000;
 	bottom:0px;
 	left:0px;
@@ -342,13 +342,13 @@ div.row {
 }
 
 .video-wrapper-middle {
-  perspective: 500px;
+  perspective: 250px;
 }
 
 #middle-video {
 	position: absolute;
-	width:200px;
-	bottom: 0px;
+	width:180px;
+	bottom: 15px;
 	left:0px;
   transform: rotateY(-30deg);
 	filter:opacity(50%);
@@ -356,8 +356,8 @@ div.row {
 }
 
 #image-middle-bottom {
-	position:absolute;
-	width:200px;
+	position: absolute;
+	width:180px;
 	z-index:-300000;
 	bottom:0px;
 	left:0px;
@@ -371,8 +371,8 @@ div.row {
 }
 
 #image-right-top {
-	position:absolute;
-	width:200px;
+	position: absolute;
+	width:180px;
 	z-index:300000;
 	bottom:0px;
 	left:0px;
@@ -386,21 +386,21 @@ div.row {
 }
 
 .video-wrapper-right {
-  perspective: 500px;
+  perspective: 250px;
 }
 
 #right-video {
 	position: absolute;
-	width:200px;
-	bottom: 0px;
+	width:180px;
+	bottom: 15px;
 	left:0px;
   transform: rotateY(-30deg);
 	filter:opacity(50%);
 }
 
 #image-right-bottom {
-	position:absolute;
-	width:200px;
+	position: absolute;
+	width:180px;
 	z-index:-300000;
 	bottom:0px;
 	left:0px;
