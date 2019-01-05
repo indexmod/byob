@@ -268,7 +268,7 @@ div.row {}
   width: 100px;
   bottom: 50px;
   left: 50px;
-  transform: rotateY(-5deg);
+  transform: rotateX(20deg) rotateY(-5deg) rotateZ(-10deg);
   filter: opacity(30%);
 }
 #image-left-bottom {
@@ -305,7 +305,7 @@ div.row {}
   width: 100px;
   bottom: 30px;
   left: 10px;
-  transform: rotateY(30deg);
+  transform: rotateX(0deg) rotateY(-5deg) rotateZ(-0deg);
   filter: opacity(50%);
 }
 
@@ -315,7 +315,7 @@ div.row {}
   bottom: 10px;
   left: -10px;
 	z-index: -200000;
-  transform: rotateY(25deg);
+  transform: rotateX(0deg) rotateY(-5deg) rotateZ(-0deg);
   filter: opacity(90%);
 }
 
@@ -353,7 +353,7 @@ div.row {}
   width: 100px;
   bottom: 30px;
   left: 10px;
-  transform: rotateY(-30deg);
+  transform: rotateX(-30deg) rotateY(-30deg) rotateZ(-30deg);
   filter: opacity(50%);
 }
 
