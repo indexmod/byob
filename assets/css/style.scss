@@ -268,8 +268,8 @@ div.row {}
   width: 100px;
   bottom: 50px;
   left: 50px;
-  transform: rotateX(0deg) rotateY(20deg) rotateZ(0deg);
-  filter: opacity(30%);
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  filter: opacity(20%);
 }
 #image-left-bottom {
   position: absolute;
