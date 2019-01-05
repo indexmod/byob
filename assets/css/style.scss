@@ -298,14 +298,14 @@ div.row {}
   filter: grayscale(100%);
 }
 .video-wrapper-middle {
-  perspective: 250px;
+  perspective: 1500px;
 }
 #middle-video-1 {
   position: absolute;
   width: 100px;
   bottom: 30px;
   left: 10px;
-  transform: rotateY(-30deg);
+  transform: rotateY(30deg);
   filter: opacity(50%);
 }
 
@@ -314,8 +314,9 @@ div.row {}
   width: 50px;
   bottom: 10px;
   left: -10px;
-  transform: rotateY(-25deg);
-  filter: opacity(50%);
+	z-index: -200000;
+  transform: rotateY(25deg);
+  filter: opacity(90%);
 }
 
 #image-middle-bottom {
