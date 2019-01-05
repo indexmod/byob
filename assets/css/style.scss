@@ -323,7 +323,7 @@ img {
   transform: rotateY(70deg);
 }
 
-#mall {
+#campus-top {
 	position:absolute;
 	width:100px;
 	z-index:300000;
@@ -340,7 +340,16 @@ img {
 	width:100px;
 	bottom: 20px;
 	left:40px;
-  transform: rotateX(-20deg);
+	filter:opacity(50%);
+ transform: rotateX(-20deg);
+}
+
+#campus-bottom {
+	position:absolute;
+	width:100px;
+	z-index:-300000;
+	bottom:0px;
+	left:0px;
 }
 
 #video-cover {
