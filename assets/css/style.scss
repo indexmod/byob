@@ -373,6 +373,8 @@ div.row {
 	z-index:300000;
 	bottom:0px;
 	left:0px;
+ -webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
 }
 
 #image-right-top:hover {
@@ -399,6 +401,8 @@ div.row {
 	z-index:-300000;
 	bottom:0px;
 	left:0px;
+ -webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
 }
 
 #image-right-bottom:hover {
