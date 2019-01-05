@@ -303,7 +303,7 @@ div.row {}
 #middle-video-1 {
   position: absolute;
   width: 100px;
-  bottom: 32px;
+  bottom: 55px;
   left: 60px;
   transform: rotateX(0deg) rotateY(-5deg) rotateZ(-0deg);
   filter: opacity(50%);
@@ -350,9 +350,9 @@ div.row {}
 }
 #right-video {
   position: absolute;
-  width: 200px;
+  width: 170px;
   bottom: 20px;
-  left: 10px;
+  left: -10px;
   transform: rotateX(30deg) rotateY(-30deg) rotateZ(30deg);
   filter: opacity(30%);
 }
