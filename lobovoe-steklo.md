@@ -22,6 +22,6 @@ frame-rate: 25
 status: in collection
 duration-sec: 2000
 price-per-sec: 3
-sourceurl: https://vimeo.com/94852717
-video: https://media.giphy.com/media/75Brsd1s8FGeyUe02J/giphy.mp4
+sourceurl: https://media.giphy.com/media/R5725c8hpXhSg/giphy.mp4
+video: https://media.giphy.com/media/R5725c8hpXhSg/giphy.mp4
 ---
