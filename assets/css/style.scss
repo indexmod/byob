@@ -4,21 +4,21 @@
 .rex {
   font-family: 'Verdana';
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 500;
   line-height: 1.4em;
   color: black;
 }
 .rates-top {
   font-family: 'Verdana';
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 500;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 .rates-top:hover {
   font-family: 'Verdana';
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 500;
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
@@ -26,13 +26,13 @@
   font-family: 'Verdana', serif;
   font-size: 20px;
   line-height: 1.4em;
-  font-weight: 100;
+  font-weight: 500;
   color: black;
 }
 .intro {
   font-family: 'Verdana';
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 500;
   line-height: 1.4em;
   list-style-type: none;
 }
@@ -46,53 +46,53 @@ body {
   font-family: 'Verdana', serif;
   font-size: 20px;
   line-height: 1.4em;
-  font-weight: 100;
+  font-weight: 500;
   color: black;
 }
 p {
   font-family: 'Verdana', serif;
   font-size: 20px;
   line-height: 1.4em;
-  font-weight: 100;
+  font-weight: 500;
   color: black;
 }
 pre {
   font-family: 'Verdana', serif;
   font-size: 20px;
   line-height: 1.4em;
-  font-weight: 100;
+  font-weight: 500;
   color: black;
 }
 p.foot {
   font-family: 'Verdana', serif;
   font-size: 20px;
   line-height: 1.4em;
-  font-weight: 100;
+  font-weight: 500;
 }
 p.caption-name {
   font-family: 'Verdana', serif;
   font-size: 20px;
   line-height: 1.4em;
-  font-weight: 100;
+  font-weight: 500;
 }
 p.caption-position {
   font-family: 'Verdana', serif;
   font-size: 20px;
   line-height: 1.4em;
-  font-weight: 100;
+  font-weight: 500;
 }
 .rate {
-  font-weight: 100;
+  font-weight: 500;
   color: rose;
 }
 .rate:hover {
-  font-weight: 100;
+  font-weight: 500;
   color: black;
 }
 h1 {
   font-family: 'Verdana', serif;
   font-size: 25px;
-  font-weight: 100;
+  font-weight: 500;
   line-height: 1.4em;
   color: black;
 }
@@ -108,7 +108,7 @@ table {
   font-family: 'Verdana', serif;
   font-size: 20px;
   line-height: 1.4em;
-  font-weight: 100;
+  font-weight: 500;
   background-color: transparent;
   border-collapse: collapse;
 }
@@ -119,13 +119,13 @@ th, td {
 }
 th {
   font-family: 'Verdana', serif;
-  font-weight: 100;
+  font-weight: 500;
   text-align: left;
   height: auto;
   vertical-align: center;
 }
 td {
-  font-weight: 100;
+  font-weight: 500;
   height: auto;
   vertical-align: center;
 }
@@ -148,23 +148,23 @@ table.top th, td {
   border-bottom: 1px solid black;
 }
 table.top td {
-  font-weight: 100;
+  font-weight: 500;
   height: auto;
   vertical-align: center;
 }
 table.top tr:hover {
   background-color: Gainsboro;
-  font-weight: 100;
+  font-weight: 500;
 }
 .toptable-meta {
-  font-weight: 100;
+  font-weight: 500;
   color: #4e80d8;
 }
 .highlighter-rouge {
   font-family: 'Verdana';
   font-size: 20px;
   line-height: 1.4em;
-  font-weight: 100;
+  font-weight: 500;
   color: black;
   border: solid 1px black;
   background-color: grey;
@@ -176,35 +176,35 @@ table.top tr:hover {
 a:link {
   color: #4e80d8;
   text-decoration: none;
-  font-weight: 100;
+  font-weight: 500;
 }
 a:visited {
   color: #4e80d8;
   text-decoration: none;
-  font-weight: 100;
+  font-weight: 500;
 }
 a:hover {
   color: #4e80d8;
   text-decoration: underline;
-  font-weight: 100;
+  font-weight: 500;
 }
 a:active {
   color: #4e80d8;
   text-decoration: none;
-  font-weight: 100;
+  font-weight: 500;
 }
 li {
   font-family: 'Verdana';
   font-size: 20px;
   line-height: 1.4em;
-  font-weight: 100;
+  font-weight: 500;
   color: black;
 }
 ul {
   font-family: 'Verdana';
   font-size: 20px;
   line-height: 1.4em;
-  font-weight: 100;
+  font-weight: 500;
   color: black;
 }
 .disqus_thread {
@@ -300,12 +300,21 @@ div.row {}
 .video-wrapper-middle {
   perspective: 250px;
 }
-#middle-video {
+#middle-video-1 {
   position: absolute;
   width: 100px;
   bottom: 30px;
   left: 10px;
   transform: rotateY(-30deg);
+  filter: opacity(50%);
+}
+
+#middle-video-2 {
+  position: absolute;
+  width: 50px;
+  bottom: 10px;
+  left: -10px;
+  transform: rotateY(-25deg);
   filter: opacity(50%);
 }
 
