@@ -302,12 +302,13 @@ div.row {}
 }
 #middle-video {
   position: absolute;
-  width: 180px;
-  bottom: 15px;
-  left: 0px;
+  width: 100px;
+  bottom: 30px;
+  left: 10px;
   transform: rotateY(-30deg);
   filter: opacity(50%);
 }
+
 #image-middle-bottom {
   position: absolute;
   width: 180px;
@@ -339,9 +340,9 @@ div.row {}
 }
 #right-video {
   position: absolute;
-  width: 180px;
-  bottom: 15px;
-  left: 0px;
+  width: 100px;
+  bottom: 30px;
+  left: 10px;
   transform: rotateY(-30deg);
   filter: opacity(50%);
 }
