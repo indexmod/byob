@@ -304,10 +304,11 @@ div.row {
 
 #left-video {
 	position: absolute;
-	width:100px;
-	bottom: 30px;
-	left:20px;
-  transform: rotateY(-20deg);
+	width:200px;
+	bottom: 0px;
+	left:0px;
+  transform: rotateY(-30deg);
+	filter:opacity(50%);
 }
 
 #image-left-bottom {
@@ -341,15 +342,17 @@ div.row {
 }
 
 .video-wrapper-middle {
-  perspective: 250px;
+  perspective: 500px;
 }
 
 #middle-video {
 	position: absolute;
-	width:100px;
-	bottom: 50px;
-	left:30px;
-  transform: rotateY(70deg);
+	width:200px;
+	bottom: 0px;
+	left:0px;
+  transform: rotateY(-30deg);
+	filter:opacity(50%);
+
 }
 
 #image-middle-bottom {
@@ -383,16 +386,16 @@ div.row {
 }
 
 .video-wrapper-right {
-  perspective: 250px;
+  perspective: 500px;
 }
 
 #right-video {
 	position: absolute;
-	width:100px;
-	bottom: 20px;
-	left:40px;
+	width:200px;
+	bottom: 0px;
+	left:0px;
+  transform: rotateY(-30deg);
 	filter:opacity(50%);
- transform: rotateX(-20deg);
 }
 
 #image-right-bottom {
