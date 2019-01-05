@@ -336,7 +336,7 @@ div.row {}
   filter: grayscale(100%);
 }
 .video-wrapper-right {
-  perspective: 1000px;
+  perspective: 1500px;
 }
 #right-video {
   position: absolute;
@@ -346,6 +346,7 @@ div.row {}
   transform: rotateY(-30deg);
   filter: opacity(50%);
 }
+
 #image-right-bottom {
   position: absolute;
   width: 180px;
