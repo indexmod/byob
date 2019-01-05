@@ -261,14 +261,14 @@ div.row {}
   filter: grayscale(100%);
 }
 .video-wrapper-left {
-  perspective: 250px;
+  perspective: 200px;
 }
 #left-video {
   position: absolute;
   width: 100px;
   bottom: 50px;
   left: 50px;
-  transform: rotateX(20deg) rotateY(-5deg) rotateZ(-10deg);
+  transform: rotateX(0deg) rotateY(20deg) rotateZ(0deg);
   filter: opacity(30%);
 }
 #image-left-bottom {
