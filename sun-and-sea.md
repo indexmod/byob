@@ -21,6 +21,6 @@ frame-rate: 25
 duration-sec: 30000
 price-per-sec: 5
 status: in collection
-sourceurl: https://giphy.com/gifs/64aBG2rqiy4Kos9wog
-video: https://giphy.com/gifs/64aBG2rqiy4Kos9wog
+sourceurl:  https://media.giphy.com/media/KWgscU0f8qqxpIDI8E/giphy.mp4
+video: https://media.giphy.com/media/KWgscU0f8qqxpIDI8E/giphy.mp4
 ---
