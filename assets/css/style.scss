@@ -298,14 +298,14 @@ div.row {}
   filter: grayscale(100%);
 }
 .video-wrapper-middle {
-  perspective: 1500px;
+  perspective: 1000px;
 }
 #middle-video-1 {
   position: absolute;
   width: 110px;
   bottom: 96px;
   left: 60px;
-  transform: rotateX(0deg) rotateY(-5deg) rotateZ(-0deg);
+  transform: rotateX(0deg) rotateY(-30deg) rotateZ(-0deg);
   filter: opacity(50%);
 }
 
