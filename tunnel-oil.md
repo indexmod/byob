@@ -2,19 +2,13 @@
 title: Tunnel oil
 permalink: tunnel-oil
 layout: default
-originlang: Rus.
-originspell: Тоннель нефть
-appearing: Создано
+artist: Mic Sachkov
 city: Москва
 birth: 2016
-givenname: Tunnel oil
-familyname:
-othername: Тоннель нефть
 size: 1920 x 1080
 price:
 venue: Privat archive
 status: Concept
-artist: Mic Sachkov
 copyright: Mic Sachkov
 origin: видео-петля
 profession: для проекции

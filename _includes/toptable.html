@@ -3,13 +3,10 @@
     <td>Название: <span class="toptable-meta">{{page.title}}</span></td>
     </tr>
     <tr>
-  <td>{{ page.originlang }}: <span class="toptable-meta">{{ page.originspell }}</span></td>
-  </tr>
-    <tr>
     <td>Автор: <span class="toptable-meta">{{page.author}}</span></td>
     </tr>
     <tr>
-    <td>Год создания: <span class="toptable-meta">{{page.birth}}</span></td>
+    <td>Год: <span class="toptable-meta">{{page.birth}}</span></td>
     </tr>
   <tr>
     <td>Размер: <span class="toptable-meta">{{ page.size }}</span></td>
@@ -18,12 +15,12 @@
     <td>Длительность: <span class="toptable-meta">{{ page.duration-hours}}:{{ page.duration-minutes}}:{{ page.duration-seconds }}</span></td>
   </tr>
   <tr>
-    <td>Всего в секундах: <span class="toptable-meta">{% include total-seconds.html %}</span></td>
+    <td>В секундах: <span class="toptable-meta">{% include total-seconds.html %}</span></td>
   </tr>
     <tr>
     <td>Цена за секунду: <span class="toptable-meta">{{ page.price-per-second }} руб.</span></td>
   </tr>
   <tr>
-    <td>Всего: <span class="toptable-meta">{% include total-price-seconds.html %} руб.</span></td>
+    <td>Цена: <span class="toptable-meta">{% include total-price-seconds.html %} руб.</span></td>
   </tr>
 </table>
