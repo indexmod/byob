@@ -25,6 +25,6 @@ sourceurl: index
 duration-hours: 1
 duration-minutes: 10
 duration-seconds: 10
-price-per-second: 20
+price-per-second: 30
 video: https://media.giphy.com/media/Y4sPlc0tG4lbvOD3Vn/giphy.mp4
 ---
