@@ -2,26 +2,14 @@
 title: Лобовое стекло
 permalink: lobovoe-steklo
 layout: default
-originlang: Rus.
-originspell: Лобовое стекло
-appearing: Создано
+artist: Андрей Дей
 city: Москва
-birth: 2014
-author-givenname: Андрей
-author-familyname: Дей
-author-othername: Галактион
-expositions: ГУМ, ЦУМ
-owner: Андрей Дей
-curator:
-genre: видео-петля
-format: AVI
-duration: 0:06
-size: 1920 x 1080 (Full HD)
-aspect-ratio: 16:9
-frame-rate: 25
-status: in collection
-duration-sec: 2000
-price-per-sec: 3
+birth: 2016
+size: 1920 x 1080
+duration-hours: 0
+duration-minutes: 0
+duration-seconds: 10
+price-per-second: 500
 sourceurl: https://media.giphy.com/media/R5725c8hpXhSg/giphy.mp4
 video: https://media.giphy.com/media/R5725c8hpXhSg/giphy.mp4
 ---

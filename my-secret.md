@@ -2,23 +2,14 @@
 title: My Secret
 permalink: my-secret
 layout: default
-originlang: Rus.
-originspell: Мой секрет
-appearing: Создано
+artist: Андрей Дей
 city: Москва
-birth: 2017
-givenname: My Secret
-familyname:
-othername: Мой секрет
-venue: YouTube
-founder: Андрей Дей
-origin: видео-петля
-profession: длина
-photo: Фрагмент произведения
-photographer: А. Дей
-sourceurl:
-duration-sec: 4500
-price-per-sec: 5
-soundcloud: 0
-video: https://media.giphy.com/media/XtiggzJWk80qLLpjFI/giphy.mp4
+birth: 2016
+size: 1920 x 1080
+duration-hours: 0
+duration-minutes: 0
+duration-seconds: 10
+price-per-second: 5000
+sourceurl: https://media.giphy.com/media/Y4sPlc0tG4lbvOD3Vn/giphy.mp4
+video: https://media.giphy.com/media/Y4sPlc0tG4lbvOD3Vn/giphy.mp4
 ---
