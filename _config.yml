@@ -8,7 +8,7 @@ hall-projector: 320000
 street-projector: 500000
 room-player: 11250
 hall-player: 11250
-street-player: 50000
+street-player: 11250
 room-screen: 0
 hall-screen: 35000
 street-screen: 0
