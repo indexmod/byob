@@ -22,7 +22,9 @@ photo: Фрагмент произведения
 source:
 photographerurl: index
 sourceurl: index
-duration-sec: 80000
-price-per-sec: 10
+duration-hours: 1
+duration-minutes: 10
+duration-seconds: 10
+price-per-second: 20
 video: https://media.giphy.com/media/Y4sPlc0tG4lbvOD3Vn/giphy.mp4
 ---

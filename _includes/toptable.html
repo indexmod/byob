@@ -15,10 +15,13 @@
     <td>Размер: <span class="toptable-meta">{{ page.size }}</span></td>
   </tr>
   <tr>
-    <td>Город: <span class="toptable-meta">{{ page.city }}</span></td>
+    <td>Длительность: <span class="toptable-meta">{{ page.duration-hours}}:{{ page.duration-minutes}}:{{ page.duration-seconds }}</span></td>
   </tr>
   <tr>
-    <td>Выставлено: <span class="toptable-meta">{{ page.venue }}</span></td>
+    <td>Всего в секундах: <span class="toptable-meta">{{ page.duration-hours | divided_by: 3600 }}</span></td>
+  </tr>
+  <tr>
+    <td>Всего: <span class="toptable-meta">{% include total-price-seconds.html %}</span></td>
   </tr>
     <tr>
     <td>Владелец: <span class="toptable-meta">{{ page.owner }}</span></td>
