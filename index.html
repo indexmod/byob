@@ -1,52 +1,82 @@
-const repoUser = "indexmod";
-const repoName = "byob";
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<title>Web art player</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+  html, body {
+    margin: 0; padding: 0; height: 100%; background: black; overflow: hidden;
+  }
+  iframe {
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    transform: rotate(-90deg) translate(-50%, -50%);
+    transform-origin: center center;
+  }
+</style>
+</head>
+<body>
 
-const localPages = [
-  `https://${repoUser}.github.io/${repoName}/F%20L%20U%20I%20D.html`,
-  `https://${repoUser}.github.io/${repoName}/M%20A%20S%20K.html`
-];
+<iframe id="player"></iframe>
 
-async function getWeblocUrl(path) {
-  try {
-    const response = await fetch(path);
-    const text = await response.text();
-    const parser = new DOMParser();
-    const xml = parser.parseFromString(text, "application/xml");
-    const urlNode = xml.querySelector("string");
-    if (urlNode && urlNode.textContent) {
-      return urlNode.textContent.trim();
+<script>
+  const repoUser = "indexmod";
+  const repoName = "byob";
+
+  const localPages = [
+    `https://${repoUser}.github.io/${repoName}/F%20L%20U%20I%20D.html`,
+    `https://${repoUser}.github.io/${repoName}/M%20A%20S%20K.html`
+  ];
+
+  async function getWeblocUrl(path) {
+    try {
+      const response = await fetch(path);
+      const text = await response.text();
+      const parser = new DOMParser();
+      const xml = parser.parseFromString(text, "application/xml");
+      const urlNode = xml.querySelector("string");
+      if (urlNode && urlNode.textContent) {
+        return urlNode.textContent.trim();
+      }
+    } catch (e) {
+      console.error("Ошибка при чтении webloc:", e);
     }
-  } catch (e) {
-    console.error("Ошибка при чтении webloc:", e);
-  }
-  return null;
-}
-
-async function start() {
-  const weblocUrl = await getWeblocUrl(`https://${repoUser}.github.io/${repoName}/L%20I%20M%20I.webloc`);
-
-  const sites = [...localPages];
-  if (weblocUrl) {
-    sites.push(weblocUrl);
-  } else {
-    console.warn("Не удалось загрузить URL из L I M I.webloc");
+    return null;
   }
 
-  if (sites.length === 0) {
-    console.error("Нет страниц для отображения");
-    return;
+  async function start() {
+    const weblocUrl = await getWeblocUrl(`https://${repoUser}.github.io/${repoName}/L%20I%20M%20I.webloc`);
+
+    const sites = [...localPages];
+    if (weblocUrl) {
+      sites.push(weblocUrl);
+    } else {
+      console.warn("Не удалось загрузить URL из L I M I.webloc");
+    }
+
+    if (sites.length === 0) {
+      console.error("Нет страниц для отображения");
+      return;
+    }
+
+    let current = 0;
+    const iframe = document.getElementById('player');
+
+    function switchSite() {
+      iframe.src = sites[current];
+      current = (current + 1) % sites.length;
+    }
+
+    switchSite();
+    setInterval(switchSite, 3 * 60 * 1000); // 3 минуты
   }
 
-  let current = 0;
-  const iframe = document.getElementById('player');
+  start();
+</script>
 
-  function switchSite() {
-    iframe.src = sites[current];
-    current = (current + 1) % sites.length;
-  }
-
-  switchSite();
-  setInterval(switchSite, 3 * 60 * 1000);
-}
-
-start();
+</body>
+</html>
