@@ -6,72 +6,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <style>
   html, body {
-    margin: 0; padding: 0; height: 100%; background: black; color: white; font-family: sans-serif;
-    display: flex; justify-content: center; align-items: center;
-    overflow: hidden;
-    flex-direction: column;
-  }
-  #links {
-    display: flex;
-    gap: 40px;
-    font-size: 2rem;
-  }
-  #links a {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-    user-select: none;
-    padding: 10px 20px;
-    border: 2px solid white;
-    border-radius: 8px;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  #links a:hover {
-    background-color: white;
-    color: black;
+    margin: 0; padding: 0; height: 100%; background: black; overflow: hidden;
   }
   iframe {
-    position: fixed;
-    top: 50%; left: 50%;
     width: 100vw;
     height: 100vh;
     border: none;
-    transform: rotate(-90deg) translate(-50%, -50%);
-    transform-origin: center center;
-    display: none;
-    z-index: 1000;
+    display: block;
   }
-  #backBtn {
+  #debug {
     position: fixed;
-    top: 10px; left: 10px;
-    background: rgba(255 255 255 / 0.2);
-    border: none;
+    top: 0; left: 0;
     color: white;
-    font-size: 1rem;
-    padding: 8px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-    display: none;
-    z-index: 1100;
+    background: rgba(0,0,0,0.7);
+    padding: 5px;
+    z-index: 9999;
+    font-family: monospace;
   }
 </style>
 </head>
 <body>
 
-<div id="links">
-  <a href="#" data-index="0">1</a>
-  <a href="#" data-index="1">2</a>
-  <a href="#" data-index="2">3</a>
-</div>
-
-<button id="backBtn">Назад</button>
-
 <iframe id="player"></iframe>
+<div id="debug">Загружается...</div>
 
 <script>
   const iframe = document.getElementById('player');
-  const linksDiv = document.getElementById('links');
-  const backBtn = document.getElementById('backBtn');
+  const debug = document.getElementById('debug');
 
   const repoUser = "indexmod";
   const repoName = "byob";
@@ -81,7 +42,6 @@
     `https://${repoUser}.github.io/${repoName}/2.html`
   ];
 
-  // Функция для получения URL из webloc файла
   async function getWeblocUrl(path) {
     try {
       const response = await fetch(path);
@@ -99,46 +59,34 @@
     return null;
   }
 
-  // Предзагружаем URL для 3
-  let weblocUrl = null;
-  getWeblocUrl(`https://${repoUser}.github.io/${repoName}/3.webloc`).then(url => {
-    if (url) {
-      weblocUrl = url;
+  async function start() {
+    const weblocUrl = await getWeblocUrl(`https://${repoUser}.github.io/${repoName}/3.webloc`);
+    const sites = [...localPages];
+    if (weblocUrl) {
+      sites.push(weblocUrl);
     } else {
       console.warn("Не удалось загрузить URL из 3.webloc");
     }
-  });
 
-  // Массив страниц для каждой ссылки, индекс соответствует data-index
-  function getUrlByIndex(index) {
-    if (index === 2) {
-      return weblocUrl || "#";
+    if (sites.length === 0) {
+      debug.textContent = "Нет страниц для отображения";
+      return;
     }
-    return localPages[index] || "#";
+
+    let current = 0;
+
+    function switchSite() {
+      const url = sites[current];
+      iframe.src = url;
+      debug.textContent = "Загружается: " + url;
+      current = (current + 1) % sites.length;
+    }
+
+    switchSite();
+    setInterval(switchSite, 3 * 60 * 1000); // переключаем каждые 3 минуты
   }
 
-  linksDiv.addEventListener('click', (e) => {
-    if (e.target.tagName === "A") {
-      e.preventDefault();
-      const idx = parseInt(e.target.dataset.index, 10);
-      const url = getUrlByIndex(idx);
-      if (url && url !== "#") {
-        iframe.src = url;
-        iframe.style.display = "block";
-        backBtn.style.display = "block";
-        linksDiv.style.display = "none";
-      } else {
-        alert("URL не загружен или недоступен");
-      }
-    }
-  });
-
-  backBtn.addEventListener('click', () => {
-    iframe.style.display = "none";
-    iframe.src = "";
-    backBtn.style.display = "none";
-    linksDiv.style.display = "flex";
-  });
+  start();
 </script>
 
 </body>
