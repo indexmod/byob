@@ -49,6 +49,7 @@
   #qrcode {
     width: 64px;
     height: 64px;
+    flex-shrink: 0;
   }
 </style>
 </head>
@@ -62,7 +63,7 @@
   <div id="qrcode"></div>
 </div>
 
-<!-- QR code library (minified) -->
+<!-- QR code library -->
 <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
 
 <script>
@@ -150,10 +151,15 @@
     scaleToFit();
   }
 
-  // Генерируем QR-код единожды
-  QRCode.toCanvas(qrcodeContainer, 'https://androdei.indexmod.xyz', { width: 64, margin: 1 }, function (error) {
-    if (error) console.error(error);
-  });
+  // Генерируем QR-код **один раз** в пустом canvas внутри #qrcode
+  QRCode.toCanvas(
+    qrcodeContainer,
+    'https://androdei.indexmod.xyz',
+    { width: 64, margin: 1 },
+    function (error) {
+      if (error) console.error(error);
+    }
+  );
 
   start();
 </script>
