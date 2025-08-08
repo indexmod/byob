@@ -39,23 +39,58 @@
   const repoUser = "indexmod";
   const repoName = "byob";
 
-  const sites = [
-    `https://${repoUser}.github.io/${repoName}/F%20L%20U%20I%20D.html`,
-    `https://${repoUser}.github.io/${repoName}/M%20A%20S%20K.html`
+  const localPages = [
+    `https://${repoUser}.github.io/${repoName}/1.html`,
+    `https://${repoUser}.github.io/${repoName}/2.html`
   ];
 
-  let current = 0;
-
-  function switchSite() {
-    const url = sites[current];
-    iframe.src = url;
-    debug.textContent = "Загружается: " + url;
-    console.log("Загружаю:", url);
-    current = (current + 1) % sites.length;
+  async function getWeblocUrl(path) {
+    try {
+      const response = await fetch(path);
+      if (!response.ok) throw new Error('Не удалось загрузить ' + path);
+      const text = await response.text();
+      const parser = new DOMParser();
+      const xml = parser.parseFromString(text, "application/xml");
+      const urlNode = xml.querySelector("string");
+      if (urlNode && urlNode.textContent) {
+        return urlNode.textContent.trim();
+      }
+    } catch (e) {
+      console.error("Ошибка при чтении webloc:", e);
+    }
+    return null;
   }
 
-  switchSite();
-  setInterval(switchSite, 3 * 60 * 1000);
+  async function start() {
+    const weblocUrl = await getWeblocUrl(`https://${repoUser}.github.io/${repoName}/3.webloc`);
+
+    const sites = [...localPages];
+    if (weblocUrl) {
+      sites.push(weblocUrl);
+    } else {
+      console.warn("Не удалось загрузить URL из 3.webloc");
+    }
+
+    if (sites.length === 0) {
+      debug.textContent = "Нет страниц для отображения";
+      return;
+    }
+
+    let current = 0;
+
+    function switchSite() {
+      const url = sites[current];
+      iframe.src = url;
+      debug.textContent = "Загружается: " + url;
+      console.log("Загружаю:", url);
+      current = (current + 1) % sites.length;
+    }
+
+    switchSite();
+    setInterval(switchSite, 3 * 60 * 1000);
+  }
+
+  start();
 </script>
 
 </body>
