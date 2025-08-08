@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8" />
-<title>Web art player</title>
+<title>BYOB BERLIN 8 AUG 2025</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <style>
   html, body {
@@ -40,6 +40,15 @@
     padding: 5px 10px;
     font-family: monospace;
     z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #qrcode {
+    width: 64px;
+    height: 64px;
   }
 </style>
 </head>
@@ -48,11 +57,18 @@
 <div id="wrapper">
   <iframe id="player" src=""></iframe>
 </div>
-<div id="debug">F L U I D E — ANDR O DEI</div>
+<div id="debug">
+  <span id="text">F L U I D E — ANDR O DEI</span>
+  <div id="qrcode"></div>
+</div>
+
+<!-- QR code library (minified) -->
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
 
 <script>
   const iframe = document.getElementById('player');
-  const debug = document.getElementById('debug');
+  const debugText = document.getElementById('text');
+  const qrcodeContainer = document.getElementById('qrcode');
   const wrapper = document.getElementById('wrapper');
 
   const repoUser = "indexmod";
@@ -115,7 +131,7 @@
     }
 
     if (sites.length === 0) {
-      debug.textContent = "Нет страниц для отображения";
+      debugText.textContent = "Нет страниц для отображения — ANDR O DEI";
       return;
     }
 
@@ -124,7 +140,7 @@
     function switchSite() {
       const site = sites[current];
       iframe.src = site.url;
-      debug.textContent = site.name + " — ANDR O DEI";
+      debugText.textContent = site.name + " — ANDR O DEI";
       current = (current + 1) % sites.length;
     }
 
@@ -133,6 +149,11 @@
 
     scaleToFit();
   }
+
+  // Генерируем QR-код единожды
+  QRCode.toCanvas(qrcodeContainer, 'https://androdei.indexmod.xyz', { width: 64, margin: 1 }, function (error) {
+    if (error) console.error(error);
+  });
 
   start();
 </script>
