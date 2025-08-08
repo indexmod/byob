@@ -46,10 +46,10 @@
     gap: 10px;
   }
 
-  #qrcode {
-    width: 64px;
-    height: 64px;
-    flex-shrink: 0;
+  #debug img.qrcode {
+    height: 1.2em;
+    width: auto;
+    display: inline-block;
   }
 </style>
 </head>
@@ -60,16 +60,12 @@
 </div>
 <div id="debug">
   <span id="text">F L U I D E — ANDR O DEI</span>
-  <div id="qrcode"></div>
+  <img class="qrcode" src="https://indexmod.github.io/byob/qrcode.png" alt="QR Code" />
 </div>
-
-<!-- QR code library -->
-<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
 
 <script>
   const iframe = document.getElementById('player');
   const debugText = document.getElementById('text');
-  const qrcodeContainer = document.getElementById('qrcode');
   const wrapper = document.getElementById('wrapper');
 
   const repoUser = "indexmod";
@@ -150,16 +146,6 @@
 
     scaleToFit();
   }
-
-  // Генерируем QR-код **один раз** в пустом canvas внутри #qrcode
-  QRCode.toCanvas(
-    qrcodeContainer,
-    'https://androdei.indexmod.xyz',
-    { width: 64, margin: 1 },
-    function (error) {
-      if (error) console.error(error);
-    }
-  );
 
   start();
 </script>
