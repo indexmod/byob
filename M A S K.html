@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Auto SVG Masks — row fill</title>
+<style>
+  :root {
+    --cell-size: 100px; /* размер маски */
+    --gap: 4px;
+    --bg: #111;
+  }
+  html,body {
+    height:100%;
+    margin:0;
+    background:var(--bg);
+  }
+  /* Контейнер — центрируем, чтобы сетка была ровно по центру экрана */
+  #wrap {
+    box-sizing: border-box;
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+  }
+
+  /* Сетка: колонки вычисляются динамически в JS */
+  #grid {
+    display: grid;
+    grid-auto-flow: row;
+    gap: var(--gap);
+    /* шаблон колонок ставится динамически через style.gridTemplateColumns */
+  }
+
+  .cell {
+    width: var(--cell-size);
+    height: var(--cell-size);
+    display:block;
+    object-fit:cover;
+    image-rendering: pixelated;
+    background:#000;
+  }
+
+  /* скрытый debug-инфо (опционально) */
+  #info {
+    position: fixed;
+    left: 8px;
+    bottom: 8px;
+    color: rgba(255,255,255,0.8);
+    font-family: monospace;
+    font-size: 12px;
+    background: rgba(0,0,0,0.4);
+    padding:6px 8px;
+    border-radius:6px;
+    z-index:9999;
+  }
+</style>
+</head>
+<body>
+  <div id="wrap">
+    <div id="grid" aria-hidden="true"></div>
+  </div>
+
+  <div id="info" style="display:none;">
+    cells: <span id="infoCount">0</span>
+    &nbsp;|&nbsp; bytes: <span id="infoBytes">0</span>
+    &nbsp;|&nbsp; rows: <span id="infoRows">0</span>
+    &nbsp;|&nbsp; cols: <span id="infoCols">0</span>
+  </div>
+
+<script>
+/*
+  Поведение:
+  - генерировать SVG-маску 1 раз в секунду (GEN_INTERVAL_MS)
+  - отображать её в сетке, заполняя экран по строкам (cols вычисляются по ширине)
+  - сохранять в localStorage ключ "maskGrid" (массив base64 PNG)
+  - если общий размер (в байтах) превысил STORAGE_LIMIT_BYTES ИЛИ прошло CYCLE_MS (1 мин),
+    очистить storage и начать заново
+  - безопасные catch для ошибок записи (quota)
+*/
+
+const CELL_SIZE = 100; // px (из CSS :root --cell-size)
+const GAP = 4; // px (соответствует --gap)
+const GEN_INTERVAL_MS = 1000; // 1 секунда
+const CYCLE_MS = 60 * 1000; // 1 минута общий цикл
+const STORAGE_KEY = 'maskGrid';
+const STORAGE_LIMIT_BYTES = 3.5 * 1024 * 1024; // порог ~3.5MB; можно настроить
+
+const grid = document.getElementById('grid');
+const info = document.getElementById('info');
+const infoCount = document.getElementById('infoCount');
+const infoBytes = document.getElementById('infoBytes');
+const infoRows = document.getElementById('infoRows');
+const infoCols = document.getElementById('infoCols');
+
+let cols = 0;
+let rows = 0;
+let genTimer = null;
+let cycleTimer = null;
+let savedImages = []; // in-memory mirror of storage (array of dataURL strings)
+
+function computeGridDimensions() {
+  // вычисляем количество колонок, чтобы ровно заполнить экран по ширине
+  const availW = window.innerWidth;
+  const availH = window.innerHeight;
+  cols = Math.max(1, Math.floor((availW + GAP) / (CELL_SIZE + GAP)));
+  rows = Math.max(1, Math.floor((availH + GAP) / (CELL_SIZE + GAP)));
+  grid.style.gridTemplateColumns = `repeat(${cols}, ${CELL_SIZE}px)`;
+  updateInfo();
+}
+
+// первоначальная генерация SVG по оригинальным правилам (3x3 с вертикальной симметрией)
+function getRandomColor() {
+  return `rgb(${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)})`;
+}
+
+function generateSVGStringForCell(size = CELL_SIZE) {
+  const colors = [getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor()];
+
+  function getColor(i, j) {
+    // вертикальная симметрия как в исходном коде
+    return colors[(i * 2 + (j > 1 ? 2 - j : j)) % colors.length];
+  }
+
+  const cellUnit = size / 3; // делим на 3 части
+  let squares = '';
+  for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+      const x = j * cellUnit;
+      const y = i * cellUnit;
+      squares += `<rect x="${x}" y="${y}" width="${cellUnit}" height="${cellUnit}" fill="${getColor(i,j)}"/>`;
+    }
+  }
+
+  // два круга — масштабируем координаты под размер
+  const cx1 = cellUnit * 0.5;
+  const cx2 = size - cellUnit * 0.5;
+  const cy = size / 2;
+  const r = Math.max(4, Math.floor(size * 0.08));
+  const circles = `<circle cx="${cx1}" cy="${cy}" r="${r}" fill="black"/><circle cx="${cx2}" cy="${cy}" r="${r}" fill="black"/>`;
+
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">${squares}${circles}</svg>`;
+  return svg;
+}
+
+// Конвертация SVG в PNG dataURL через canvas
+function svgToPngDataUrl(svgString, size = CELL_SIZE) {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    // корректная кодировка unicode
+    const svg64 = btoa(unescape(encodeURIComponent(svgString)));
+    img.src = `data:image/svg+xml;base64,${svg64}`;
+    img.onload = () => {
+      try {
+        const canvas = document.createElement('canvas');
+        canvas.width = size;
+        canvas.height = size;
+        const ctx = canvas.getContext('2d');
+        ctx.clearRect(0,0,size,size);
+        ctx.drawImage(img, 0, 0, size, size);
+        const png = canvas.toDataURL('image/png');
+        resolve(png);
+      } catch (e) {
+        reject(e);
+      }
+    };
+    img.onerror = (e) => reject(e);
+  });
+}
+
+// Добавляем в DOM и в память
+function appendCellToGrid(dataUrl) {
+  const img = document.createElement('img');
+  img.className = 'cell';
+  img.width = CELL_SIZE;
+  img.height = CELL_SIZE;
+  img.src = dataUrl;
+  grid.appendChild(img);
+  // если сетка стала длиннее видимой области, будет продолжать строки автоматически
+  updateInfo();
+}
+
+// Считаем общий размер в байтах текущего массива (приближённо по длине строки)
+function approximateBytesOfArray(arr) {
+  // base64 символ ~6 бит, но проще — берем длину строки
+  let total = 0;
+  for (const s of arr) total += s.length;
+  return total;
+}
+
+function saveToLocalStorageSafe(arr) {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(arr));
+    return true;
+  } catch (e) {
+    // quota exceeded или прочие ошибки
+    console.warn('localStorage write failed:', e);
+    return false;
+  }
+}
+
+function loadFromLocalStorage() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed)) {
+        savedImages = parsed.slice();
+        // отрисовать содержимое
+        grid.innerHTML = '';
+        for (const src of savedImages) {
+          appendCellToGrid(src);
+        }
+      }
+    }
+  } catch (e) {
+    console.warn('loadFromLocalStorage failed', e);
+    savedImages = [];
+    grid.innerHTML = '';
+  }
+  updateInfo();
+}
+
+// Главная генерация: создаём SVG → конвертируем → добавляем в savedImages и в DOM → пишем в localStorage
+async function generateAndStoreOne() {
+  const svg = generateSVGStringForCell(CELL_SIZE);
+  try {
+    const png = await svgToPngDataUrl(svg, CELL_SIZE);
+    // push in-memory
+    savedImages.push(png);
+    appendCellToGrid(png);
+
+    // попробуем записать в localStorage; если не помещается — сбросим
+    const ok = saveToLocalStorageSafe(savedImages);
+    if (!ok) {
+      // очистка и рестарт (если quota)
+      console.warn('Quota exceeded — resetting storage & grid.');
+      await resetAll();
+    } else {
+      // проверим порог байтов
+      const bytes = approximateBytesOfArray(savedImages);
+      if (bytes >= STORAGE_LIMIT_BYTES) {
+        console.log('Storage limit reached (approx bytes):', bytes);
+        await resetAll();
+      } else {
+        // если сетка заполнила экран полностью (rows*cols элементов) — тоже сбрасываем и начнём заново
+        if (savedImages.length >= rows * cols) {
+          // небольшой задержка, чтобы пользователь видел последний заполненный кадр
+          setTimeout(() => resetAll(), 200);
+        }
+      }
+    }
+  } catch (e) {
+    console.error('Error generating/converting SVG:', e);
+  }
+}
+
+// Очистка состояния
+async function resetAll() {
+  // стоп таймеров
+  stopCycle();
+  // очистка данных
+  savedImages = [];
+  try { localStorage.removeItem(STORAGE_KEY); } catch (e) { /* ignore */ }
+  grid.innerHTML = '';
+  updateInfo();
+  // рестарт цикла
+  startCycle();
+}
+
+// Запуск/Стоп таймеров
+function startCycle() {
+  // сброс если уже запущено
+  stopCycle();
+  computeGridDimensions();
+  loadFromLocalStorage(); // подхватим если были предыдущие данные
+  // Запускаем генерацию каждую секунду
+  genTimer = setInterval(() => {
+    // прежде чем генерировать — если экран уже заполнен (savedImages >= rows*cols) — сброси
+    if (savedImages.length >= rows * cols) {
+      resetAll();
+      return;
+    }
+    generateAndStoreOne();
+  }, GEN_INTERVAL_MS);
+
+  // также через CYCLE_MS обязателен полный сброс
+  cycleTimer = setTimeout(() => {
+    resetAll();
+  }, CYCLE_MS);
+}
+
+function stopCycle() {
+  if (genTimer) { clearInterval(genTimer); genTimer = null; }
+  if (cycleTimer) { clearTimeout(cycleTimer); cycleTimer = null; }
+}
+
+function updateInfo() {
+  if (!info) return;
+  info.style.display = 'block';
+  infoCount.textContent = savedImages.length;
+  infoBytes.textContent = Math.round(approximateBytesOfArray(savedImages) / 1024) + 'KB';
+  infoCols.textContent = cols;
+  infoRows.textContent = rows;
+}
+
+// Обработка изменения размеров окна — пересчёт cols/rows и рестарт сетки
+let resizeTimeout;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(() => {
+    computeGridDimensions();
+    // если уже было содержимое, оставляем его, но при несовпадении размеров следующего цикла может сброситься
+    updateInfo();
+  }, 200);
+});
+
+// Инициализация
+computeGridDimensions();
+loadFromLocalStorage();
+startCycle();
+
+</script>
+</body>
+</html>
