@@ -48,7 +48,7 @@
 <div id="wrapper">
   <iframe id="player" src=""></iframe>
 </div>
-<div id="debug">Загружается...</div>
+<div id="debug">F L U I D E — ANDR O DEI</div>
 
 <script>
   const iframe = document.getElementById('player');
@@ -124,7 +124,7 @@
     function switchSite() {
       const site = sites[current];
       iframe.src = site.url;
-      debug.textContent = "Загружается: " + site.name;
+      debug.textContent = site.name + " — ANDR O DEI";
       current = (current + 1) % sites.length;
     }
 
