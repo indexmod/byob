@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8" />
-<title>BYOB BERLIN 8 AUG 2025 ANDR O DEI</title>
+<title>Web art player</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <style>
   html, body {
@@ -19,22 +19,10 @@
   }
 
   #wrapper {
-    /* Размеры: высота и ширина поменяны местами, тк будет поворот */
     width: 100vh;
     height: 100vw;
-
-    /* Центрируем через flex в body */
-
-    /* Поворот на -90 градусов */
-    transform: rotate(-90deg);
-
-    /* Чтобы трансформация вращалась относительно центра блока */
     transform-origin: center center;
-
-    /* Черный фон, чтобы были поля по краям */
     background: black;
-
-    /* Обёртка для масштабирования */
     position: relative;
   }
 
@@ -42,12 +30,7 @@
     width: 100%;
     height: 100%;
     border: none;
-
-    /* Важный момент: чтобы iframe не выходил за рамки wrapper */
     display: block;
-
-    /* Чтобы масштабировать внутри wrapper */
-    /* Будем менять масштаб через JS */
   }
   #debug {
     position: fixed;
@@ -76,9 +59,17 @@
   const repoName = "byob";
 
   const localPages = [
-    `https://${repoUser}.github.io/${repoName}/1.html`,
-    `https://${repoUser}.github.io/${repoName}/2.html`
+    {
+      url: `https://${repoUser}.github.io/${repoName}/1.html`,
+      name: "F L U I D E"
+    },
+    {
+      url: `https://${repoUser}.github.io/${repoName}/2.html`,
+      name: "M A S K"
+    }
   ];
+
+  const weblocName = "L I M I N A L";
 
   async function getWeblocUrl(path) {
     try {
@@ -97,24 +88,14 @@
     return null;
   }
 
-  // Функция для масштабирования wrapper так, чтобы он помещался в viewport без обрезки
   function scaleToFit() {
     const vw = window.innerWidth;
     const vh = window.innerHeight;
-
-    // wrapper размеры
-    const wrapperWidth = window.innerHeight;  // ширина wrapper = 100vh (т.к. width:100vh)
-    const wrapperHeight = window.innerWidth;  // высота wrapper = 100vw
-
-    // Рассчитаем масштаб по ширине и высоте, чтобы поместить wrapper целиком
+    const wrapperWidth = window.innerHeight;
+    const wrapperHeight = window.innerWidth;
     const scaleX = vw / wrapperWidth;
     const scaleY = vh / wrapperHeight;
-
-    // Берем минимальный масштаб, чтобы всё поместилось
     const scale = Math.min(scaleX, scaleY);
-
-    // Применяем масштаб к wrapper (через transform scale)
-    // Порядок трансформаций: сначала rotate(-90deg), потом scale
     wrapper.style.transform = `rotate(-90deg) scale(${scale})`;
   }
 
@@ -122,9 +103,13 @@
 
   async function start() {
     const weblocUrl = await getWeblocUrl(`https://${repoUser}.github.io/${repoName}/3.webloc`);
+
     const sites = [...localPages];
     if (weblocUrl) {
-      sites.push(weblocUrl);
+      sites.push({
+        url: weblocUrl,
+        name: weblocName
+      });
     } else {
       console.warn("Не удалось загрузить URL из 3.webloc");
     }
@@ -137,9 +122,9 @@
     let current = 0;
 
     function switchSite() {
-      const url = sites[current];
-      iframe.src = url;
-      debug.textContent = "Загружается: " + url;
+      const site = sites[current];
+      iframe.src = site.url;
+      debug.textContent = "Загружается: " + site.name;
       current = (current + 1) % sites.length;
     }
 
