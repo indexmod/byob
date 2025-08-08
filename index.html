@@ -2,26 +2,52 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8" />
-<title>Web art player</title>
+<title>BYOB BERLIN 8 AUG 2025 ANDR O DEI</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <style>
   html, body {
-    margin: 0; padding: 0; height: 100%; background: black; overflow: hidden;
-  }
-  #wrapper {
-    width: 100vh; /* меняем ширину и высоту, тк поворот */
-    height: 100vw;
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: rotate(90deg) translate(-50%, -50%);
-    transform-origin: center center;
+    margin: 0; padding: 0; height: 100%; width: 100%;
     background: black;
+    overflow: hidden;
   }
+  body, #wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  #wrapper {
+    /* Размеры: высота и ширина поменяны местами, тк будет поворот */
+    width: 100vh;
+    height: 100vw;
+
+    /* Центрируем через flex в body */
+
+    /* Поворот на -90 градусов */
+    transform: rotate(-90deg);
+
+    /* Чтобы трансформация вращалась относительно центра блока */
+    transform-origin: center center;
+
+    /* Черный фон, чтобы были поля по краям */
+    background: black;
+
+    /* Обёртка для масштабирования */
+    position: relative;
+  }
+
   iframe {
     width: 100%;
     height: 100%;
     border: none;
+
+    /* Важный момент: чтобы iframe не выходил за рамки wrapper */
     display: block;
+
+    /* Чтобы масштабировать внутри wrapper */
+    /* Будем менять масштаб через JS */
   }
   #debug {
     position: fixed;
@@ -37,13 +63,14 @@
 <body>
 
 <div id="wrapper">
-  <iframe id="player"></iframe>
+  <iframe id="player" src=""></iframe>
 </div>
 <div id="debug">Загружается...</div>
 
 <script>
   const iframe = document.getElementById('player');
   const debug = document.getElementById('debug');
+  const wrapper = document.getElementById('wrapper');
 
   const repoUser = "indexmod";
   const repoName = "byob";
@@ -70,6 +97,29 @@
     return null;
   }
 
+  // Функция для масштабирования wrapper так, чтобы он помещался в viewport без обрезки
+  function scaleToFit() {
+    const vw = window.innerWidth;
+    const vh = window.innerHeight;
+
+    // wrapper размеры
+    const wrapperWidth = window.innerHeight;  // ширина wrapper = 100vh (т.к. width:100vh)
+    const wrapperHeight = window.innerWidth;  // высота wrapper = 100vw
+
+    // Рассчитаем масштаб по ширине и высоте, чтобы поместить wrapper целиком
+    const scaleX = vw / wrapperWidth;
+    const scaleY = vh / wrapperHeight;
+
+    // Берем минимальный масштаб, чтобы всё поместилось
+    const scale = Math.min(scaleX, scaleY);
+
+    // Применяем масштаб к wrapper (через transform scale)
+    // Порядок трансформаций: сначала rotate(-90deg), потом scale
+    wrapper.style.transform = `rotate(-90deg) scale(${scale})`;
+  }
+
+  window.addEventListener('resize', scaleToFit);
+
   async function start() {
     const weblocUrl = await getWeblocUrl(`https://${repoUser}.github.io/${repoName}/3.webloc`);
     const sites = [...localPages];
@@ -95,6 +145,8 @@
 
     switchSite();
     setInterval(switchSite, 10 * 1000);
+
+    scaleToFit();
   }
 
   start();
